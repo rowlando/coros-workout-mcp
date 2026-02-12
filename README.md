@@ -30,7 +30,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "coros-workout": {
-      "command": "node",
+      "command": "/path/to/node",
       "args": ["/path/to/coros-workout-mcp/dist/src/index.js"],
       "env": {
         "COROS_EMAIL": "you@example.com",
@@ -41,6 +41,21 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
   }
 }
 ```
+
+> **Node.js 18+ required** — this server uses native `fetch()` which was added in Node 18.
+
+> **Troubleshooting `fetch is not defined`:** Claude Desktop is a GUI app that doesn't inherit your shell PATH, so node binaries installed via version managers (mise, nvm, fnm, volta) won't be found. Use the full absolute path to your node binary in `"command"`:
+>
+> ```bash
+> which node        # e.g. /Users/you/.mise/shims/node
+> node --version    # confirm it's 18+
+> ```
+>
+> Common locations:
+> - **mise**: `~/.local/share/mise/installs/node/<version>/bin/node`
+> - **nvm**: `~/.nvm/versions/node/<version>/bin/node`
+> - **fnm**: `~/.local/share/fnm/node-versions/<version>/installation/bin/node`
+> - **Homebrew**: `/opt/homebrew/bin/node`
 
 ## Tools
 
