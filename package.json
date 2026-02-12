@@ -2,6 +2,7 @@
   "name": "coros-workout-mcp",
   "version": "1.0.0",
   "description": "MCP server for creating COROS strength workouts via the Training Hub API",
+  "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
