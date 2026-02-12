@@ -287,9 +287,9 @@ server.tool(
         name,
         sportType,
         limitSize: limit,
-      })) as { data: { list: Array<{ name: string; overview: string; sportType: number; duration: number; totalSets: number; exerciseNum: number }> } };
+      })) as { data: Array<{ name: string; overview: string; sportType: number; duration: number; totalSets: number; exerciseNum: number; estimatedTime: number }> };
 
-      const workouts = result.data?.list || [];
+      const workouts = result.data || [];
       if (workouts.length === 0) {
         return {
           content: [
@@ -303,7 +303,7 @@ server.tool(
 
       const formatted = workouts
         .map((w) => {
-          const durationMin = Math.round((w.duration || 0) / 60);
+          const durationMin = Math.round((w.estimatedTime || w.duration || 0) / 60);
           return `- **${w.name}** (${durationMin} min, ${w.totalSets || 0} sets, ${w.exerciseNum || 0} exercises)${w.overview ? `\n  ${w.overview}` : ""}`;
         })
         .join("\n");
