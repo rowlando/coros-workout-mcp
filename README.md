@@ -1,0 +1,73 @@
+# coros-workout-mcp
+
+MCP server for creating COROS strength workouts via the Training Hub API. Lets Claude design workouts and push them directly to your COROS watch.
+
+## Setup
+
+```bash
+cd coros-workout-mcp
+npm install
+npm run build
+```
+
+## Usage with Claude Code
+
+```bash
+claude mcp add coros-workout -- node /path/to/coros-workout-mcp/dist/src/index.js
+```
+
+To use env var auth (avoids typing credentials in conversation):
+
+```bash
+claude mcp add coros-workout -e COROS_EMAIL=you@example.com -e COROS_PASSWORD=yourpass -e COROS_REGION=eu -- node /path/to/coros-workout-mcp/dist/src/index.js
+```
+
+## Usage with Claude Desktop
+
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "coros-workout": {
+      "command": "node",
+      "args": ["/path/to/coros-workout-mcp/dist/src/index.js"],
+      "env": {
+        "COROS_EMAIL": "you@example.com",
+        "COROS_PASSWORD": "yourpass",
+        "COROS_REGION": "eu"
+      }
+    }
+  }
+}
+```
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `authenticate_coros` | Log in with email/password (or auto-login from env vars) |
+| `check_coros_auth` | Verify current auth status |
+| `search_exercises` | Search ~383 exercises by name, muscle, body part, equipment |
+| `create_workout` | Build and push a strength workout to COROS |
+| `list_workouts` | List existing workouts |
+
+## Example conversation
+
+> "Search for chest exercises with bodyweight"
+>
+> "Create a workout called 'Quick Push' with 4x15 Push-ups, 3x10 Diamond Push-ups, and 3x20 Decline Push-ups with 45s rest"
+
+## Auth notes
+
+- **Region**: `eu` (Europe) or `us` (US). Defaults to `eu`.
+- **Session conflict**: Logging in via this API invalidates your COROS web app session, and vice versa.
+- Auth tokens are stored at `~/.config/coros-workout-mcp/auth.json` (mode 0600).
+
+## Development
+
+```bash
+npm test           # Run unit tests
+npm run test:watch # Watch mode
+npm run build      # Compile TypeScript
+```
