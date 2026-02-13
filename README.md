@@ -2,6 +2,8 @@
 
 MCP server for creating COROS strength workouts via the Training Hub API. Lets Claude design workouts and push them directly to your COROS watch.
 
+See the MCP in action: [YouTube walkthrough](https://www.youtube.com/watch?v=I2I2p7hNZjM)
+
 ## Disclaimer
 
 This is an **unofficial**, community-driven project. It is **not affiliated with, endorsed by, or connected to COROS** in any way.
