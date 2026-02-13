@@ -2,6 +2,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
+import { writeFileSync } from "node:fs";
 import {
   login,
   getValidAuth,
@@ -10,8 +11,17 @@ import {
   calculateWorkout,
   addWorkout,
   queryWorkouts,
+  queryExerciseCatalog,
+  fetchI18nStrings,
+  buildCatalogFromRaw,
 } from "./coros-api.js";
-import { searchExercises, findByName } from "./exercise-catalog.js";
+import {
+  searchExercises,
+  findByName,
+  getAllExercises,
+  reloadCatalog,
+  getCatalogPath,
+} from "./exercise-catalog.js";
 import type { Region } from "./types.js";
 
 const server = new McpServer({
@@ -251,6 +261,107 @@ server.tool(
           {
             type: "text" as const,
             text: `Failed to create workout: ${error instanceof Error ? error.message : String(error)}`,
+          },
+        ],
+        isError: true,
+      };
+    }
+  }
+);
+
+// --- Tool: update_exercises ---
+server.tool(
+  "update_exercises",
+  "Fetch the latest exercise catalog from COROS APIs and rebuild the local catalog. Requires authentication. Fetches exercises from the COROS API and i18n strings for human-readable names.",
+  {
+    sportType: z
+      .number()
+      .int()
+      .default(4)
+      .describe("Sport type to fetch exercises for (default 4 = strength)"),
+  },
+  async ({ sportType }) => {
+    try {
+      const auth = await getValidAuth();
+      if (!auth) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: "Not authenticated. Use authenticate_coros first.",
+            },
+          ],
+          isError: true,
+        };
+      }
+
+      // Get current catalog for comparison and as fallback for names
+      let oldExercises: ReturnType<typeof getAllExercises> = [];
+      let oldNames: Set<string>;
+      try {
+        oldExercises = getAllExercises();
+        oldNames = new Set(oldExercises.map((e) => e.name));
+      } catch {
+        oldNames = new Set();
+      }
+
+      // Fetch exercises and i18n in parallel
+      const [rawExercises, i18n] = await Promise.all([
+        queryExerciseCatalog(auth, sportType),
+        fetchI18nStrings(),
+      ]);
+
+      // Build catalog (pass existing catalog for name fallback)
+      const { catalog, i18nMisses } = buildCatalogFromRaw(
+        rawExercises,
+        i18n,
+        oldExercises
+      );
+
+      // Compare with old catalog
+      const newNames = new Set(catalog.map((e) => e.name));
+      const added = [...newNames].filter((n) => !oldNames.has(n));
+      const removed = [...oldNames].filter((n) => !newNames.has(n));
+
+      // Write to disk
+      const catalogPath = getCatalogPath();
+      writeFileSync(catalogPath, JSON.stringify(catalog, null, 2));
+
+      // Reload in-memory cache
+      reloadCatalog();
+
+      // Build summary
+      const lines = [
+        `Exercise catalog updated successfully.`,
+        `Total exercises: ${catalog.length}`,
+      ];
+      if (added.length > 0) {
+        lines.push(`New exercises (${added.length}): ${added.join(", ")}`);
+      }
+      if (removed.length > 0) {
+        lines.push(
+          `Removed exercises (${removed.length}): ${removed.join(", ")}`
+        );
+      }
+      if (added.length === 0 && removed.length === 0) {
+        lines.push("No changes in exercise list.");
+      }
+      if (i18nMisses.length > 0) {
+        lines.push(
+          `i18n misses (${i18nMisses.length}): ${i18nMisses.slice(0, 10).join(", ")}${i18nMisses.length > 10 ? "..." : ""}`
+        );
+      }
+      lines.push(`Catalog written to: ${catalogPath}`);
+
+      return {
+        content: [{ type: "text" as const, text: lines.join("\n") }],
+      };
+    } catch (error) {
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: `Failed to update exercises: ${error instanceof Error ? error.message : String(error)}`,
           },
         ],
         isError: true,

@@ -7,6 +7,7 @@ import type {
   CatalogExercise,
   ExerciseOverrides,
   ExercisePayload,
+  RawExercise,
   Region,
   WorkoutPayload,
 } from "./types.js";
@@ -111,6 +112,153 @@ async function apiPost(auth: AuthData, path: string, body: unknown): Promise<unk
     throw new Error(`COROS API error (${path}): ${data.message || data.result}`);
   }
   return data;
+}
+
+async function apiGet(
+  auth: AuthData,
+  path: string,
+  params: Record<string, string | number> = {}
+): Promise<unknown> {
+  const apiUrl = REGION_URLS[auth.region];
+  const url = new URL(`${apiUrl}${path}`);
+  for (const [key, value] of Object.entries(params)) {
+    url.searchParams.set(key, String(value));
+  }
+  const res = await fetch(url.toString(), {
+    method: "GET",
+    headers: apiHeaders(auth),
+  });
+  const data = await res.json();
+  if (data.result !== "0000") {
+    throw new Error(`COROS API error (${path}): ${data.message || data.result}`);
+  }
+  return data;
+}
+
+/** Fetch the full exercise catalog from COROS API */
+export async function queryExerciseCatalog(
+  auth: AuthData,
+  sportType: number = 4
+): Promise<RawExercise[]> {
+  const result = (await apiGet(auth, "/training/exercise/query", {
+    userId: auth.userId,
+    sportType,
+  })) as { data: RawExercise[] };
+  return result.data;
+}
+
+/** Fetch i18n strings from the COROS static CDN (no auth needed) */
+export async function fetchI18nStrings(): Promise<Record<string, string>> {
+  const url = "https://static.coros.com/locale/coros-traininghub-v2/en-US.prod.js";
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`Failed to fetch i18n strings: ${res.status} ${res.statusText}`);
+  }
+  let text = await res.text();
+  // Strip "window.en_US=" prefix and trailing semicolon
+  text = text.replace(/^window\.en_US\s*=\s*/, "").replace(/;\s*$/, "");
+  return JSON.parse(text);
+}
+
+/**
+ * Transform raw exercises + i18n map into CatalogExercise[].
+ * Name resolution order: i18n[codeName] → existingCatalog[codeName].name → codeName
+ * The i18n file only covers ~100 of ~383 exercises, so the existing catalog
+ * provides names for exercises that predate the i18n system.
+ */
+export function buildCatalogFromRaw(
+  rawExercises: RawExercise[],
+  i18n: Record<string, string>,
+  existingCatalog: CatalogExercise[] = []
+): { catalog: CatalogExercise[]; i18nMisses: string[] } {
+  const i18nMisses: string[] = [];
+  const catalog: CatalogExercise[] = [];
+
+  // Build lookup from existing catalog by codeName for fallback
+  const existingByCode = new Map<string, CatalogExercise>();
+  for (const e of existingCatalog) {
+    existingByCode.set(e.codeName, e);
+  }
+
+  for (const r of rawExercises) {
+    // Resolve human-readable name:
+    // 1. i18n (code name key, e.g. "T1300" → "Weighted Jump Squats")
+    // 2. Existing catalog entry (for older exercises without i18n)
+    // 3. Fall back to raw code name
+    let humanName = i18n[r.name];
+    if (!humanName) {
+      const existing = existingByCode.get(r.name);
+      if (existing) {
+        humanName = existing.name;
+      } else {
+        humanName = r.name;
+        i18nMisses.push(r.name);
+      }
+    }
+
+    // Resolve description from i18n
+    const desc = i18n[r.name + "_desc"] || "";
+
+    // Build text fields from numeric codes
+    const muscle = r.muscle || [];
+    const muscleRelevance = r.muscleRelevance || [];
+    const part = r.part || [];
+    const equipment = r.equipment || [];
+    const primaryMuscle = muscle[0];
+    const secondaryMuscles = muscleRelevance.filter((m) => m !== primaryMuscle);
+    const muscleText = primaryMuscle
+      ? (MuscleCode as Record<number, string>)[primaryMuscle] || String(primaryMuscle)
+      : "";
+    const secondaryMuscleText = secondaryMuscles
+      .map((m) => (MuscleCode as Record<number, string>)[m] || String(m))
+      .join(",");
+    const partText = part
+      .map((p) => (PartCode as Record<number, string>)[p] || String(p))
+      .join(",");
+    const equipmentText = equipment
+      .map((e) => (EquipmentCode as Record<number, string>)[e] || String(e))
+      .join(",");
+
+    catalog.push({
+      id: r.id,
+      name: humanName.trim(),
+      codeName: r.name,
+      overview: r.overview,
+      animationId: r.animationId,
+      muscle,
+      muscleRelevance,
+      part,
+      equipment,
+      exerciseType: r.exerciseType,
+      targetType: r.targetType,
+      targetValue: r.targetValue,
+      intensityType: r.intensityType,
+      intensityValue: r.intensityValue,
+      restType: r.restType,
+      restValue: r.restValue,
+      sets: r.sets,
+      sortNo: r.sortNo,
+      sportType: r.sportType,
+      status: r.status,
+      createTimestamp: r.createTimestamp,
+      thumbnailUrl: r.thumbnailUrl || "",
+      sourceUrl: r.sourceUrl,
+      videoUrl: r.videoUrl,
+      coverUrlArrStr: r.coverUrlArrStr,
+      videoUrlArrStr: r.videoUrlArrStr,
+      videoInfos: r.videoInfos,
+      muscleText,
+      secondaryMuscleText,
+      partText,
+      equipmentText,
+      desc,
+    });
+  }
+
+  // Sort alphabetically by name
+  catalog.sort((a, b) => a.name.localeCompare(b.name));
+
+  return { catalog, i18nMisses };
 }
 
 // --- Payload construction ---

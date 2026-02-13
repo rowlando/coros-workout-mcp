@@ -8,22 +8,38 @@ const __dirname = dirname(__filename);
 
 let catalog: CatalogExercise[] | null = null;
 
-function loadCatalog(): CatalogExercise[] {
-  if (catalog) return catalog;
-  // Try dist/data first (built), then data/ (dev)
+/** Returns the resolved path to data/exercises.json (for writing updates) */
+export function getCatalogPath(): string {
   const paths = [
     resolve(__dirname, "..", "data", "exercises.json"),
     resolve(__dirname, "..", "..", "data", "exercises.json"),
   ];
   for (const p of paths) {
     try {
-      catalog = JSON.parse(readFileSync(p, "utf-8"));
-      return catalog!;
+      readFileSync(p, "utf-8");
+      return p;
     } catch {
       // try next
     }
   }
-  throw new Error("Could not load exercise catalog (data/exercises.json)");
+  // Default to the first path if none exist yet
+  return paths[0];
+}
+
+function loadCatalog(): CatalogExercise[] {
+  if (catalog) return catalog;
+  const p = getCatalogPath();
+  try {
+    catalog = JSON.parse(readFileSync(p, "utf-8"));
+    return catalog!;
+  } catch {
+    throw new Error("Could not load exercise catalog (data/exercises.json)");
+  }
+}
+
+/** Clear the in-memory cache so next access re-reads from disk */
+export function reloadCatalog(): void {
+  catalog = null;
 }
 
 export function getAllExercises(): CatalogExercise[] {

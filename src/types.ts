@@ -225,6 +225,43 @@ export interface WorkoutPayload {
   pitch?: number;
 }
 
+// Raw exercise as returned by the COROS /training/exercise/query API
+export interface RawExercise {
+  access: number;
+  animationId: number;
+  coverUrlArrStr: string;
+  createTimestamp: number;
+  defaultOrder: number;
+  equipment: number[];
+  exerciseType: number;
+  id: string;
+  intensityCustom: number;
+  intensityType: number;
+  intensityValue: number;
+  isDefaultAdd: number;
+  isGroup: boolean;
+  isIntensityPercent: boolean;
+  muscle: number[];
+  muscleRelevance: number[];
+  name: string;
+  overview: string;
+  part: number[];
+  restType: number;
+  restValue: number;
+  sets: number;
+  sortNo: number;
+  sourceUrl: string;
+  sportType: number;
+  status: number;
+  targetType: number;
+  targetValue: number;
+  thumbnailUrl?: string;
+  userId: number;
+  videoInfos: VideoInfo[];
+  videoUrl: string;
+  videoUrlArrStr: string;
+}
+
 // Auth token stored on disk
 export interface AuthData {
   accessToken: string;
