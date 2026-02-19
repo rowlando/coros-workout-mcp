@@ -1,0 +1,5600 @@
+[
+  {
+    "name": "A-Skips",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Calves",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f15169b87b704aad89a5d68adb0ea698.png",
+    "video": ""
+  },
+  {
+    "name": "Alternate Heel Touchers",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/66a3372cd1b445f081c9b5c6f8e96c79.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/9c7bfbec5e3c4745a5ea1f35cff0228a.gif"
+  },
+  {
+    "name": "Archer",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/26a0392a3a4b4726a83ee3830c993541.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/19ca67fff41449088ac6661dfbde0417.gif"
+  },
+  {
+    "name": "Archer Pull-Up",
+    "body_parts": [
+      "Shoulders",
+      "Arms"
+    ],
+    "muscles": [
+      "Latissimus Dorsi",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7153c6f9de4c453dbebdbae2c8754266.png",
+    "video": ""
+  },
+  {
+    "name": "Arnold Press",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/401d13c194344f57b9dd736565a13322.png",
+    "video": ""
+  },
+  {
+    "name": "B-Skips",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Quadriceps",
+      "Calves",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6f139d5c46cf4c79b5da0897d6788c48.png",
+    "video": ""
+  },
+  {
+    "name": "Back And Forth Step",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/95e0d0fd34a7474fbb813d4c015fd9bf.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/50cb7242b772474582b5618e906d77d3.gif"
+  },
+  {
+    "name": "Back Extensions",
+    "body_parts": [
+      "Back",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8293909e07674d629ea6f7911e0f2ecc.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/2e4b5c1387d542a2a332afc45df04870.gif"
+  },
+  {
+    "name": "Back Stretch",
+    "body_parts": [
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/22af85adc0c64e35919a16ec666d8e6a.png",
+    "video": ""
+  },
+  {
+    "name": "Backward Ball Throw",
+    "body_parts": [
+      "Shoulders",
+      "Back",
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1762b7d9f9994e8cb7d6e5c6f6681b13.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/777cbe96128e40cea93dc8f0edef4886.gif"
+  },
+  {
+    "name": "Balanced Kick Back",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/889500c865744753abd2c55344f36bd4.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/eaf58713092f4c549c34a975f61edecc.gif"
+  },
+  {
+    "name": "Banded Ankle Eversion",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/96333d3a7f914f18906a24f831541227.png",
+    "video": ""
+  },
+  {
+    "name": "Banded Ankle Inversion",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/002f0c76db444330984c807ba36ad6b6.png",
+    "video": ""
+  },
+  {
+    "name": "Banded Hip Abduction",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Abductor"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/3d9632662bd84c52ad0197a1041cdcea.png",
+    "video": ""
+  },
+  {
+    "name": "Banded Hip Extension",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/69ce9e5e0cac40dcbdb26088310d829b.png",
+    "video": ""
+  },
+  {
+    "name": "Banded Hip flexion",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/522291b170a7470399bf277a99bcca5a.png",
+    "video": ""
+  },
+  {
+    "name": "Banded Kneeling Hip Extensions",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/456b71731e3443978ddda03465d1970c.png",
+    "video": ""
+  },
+  {
+    "name": "Banded Press",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d10ae5eb1a83493fa7c0622c4d9af5fd.png",
+    "video": ""
+  },
+  {
+    "name": "Banded Shoulder external rotation",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8dda5b84393d4ef1a742a7b88d8aa71d.png",
+    "video": ""
+  },
+  {
+    "name": "Barbell Front Raise",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0a8483a057c34a8aa51bad6dbf279253.png",
+    "video": ""
+  },
+  {
+    "name": "Barbell Good Morning",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2ce392dae72c4750990b6bbcc309d3cd.png",
+    "video": ""
+  },
+  {
+    "name": "Barbell Lying Tricep Extensions",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/14ee30bcb61d44b2a6674ce6e42cf0d1.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/f99ff73bdcc94dd88c64bc5c2899e6a6.gif"
+  },
+  {
+    "name": "Barbell Plate Halo",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/68b14c53ae4f4917b6f127931ac81591.png",
+    "video": ""
+  },
+  {
+    "name": "Barbell Pullover",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/03f91d0caff84e2388fdef55889a9f51.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/2aea767c5fe7492b8bffa8ae85a358b5.gif"
+  },
+  {
+    "name": "Barbell Row",
+    "body_parts": [
+      "Back",
+      "Arms"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c176d6c12a55402d930b759c792551c3.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/f060360177454efeba08d8a79f9dfd21.gif"
+  },
+  {
+    "name": "Barbell Shrugs",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6922c37489ee4d809880b8e488ae0218.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/4582b004ec384a5aa4ef1162cbb59819.gif"
+  },
+  {
+    "name": "Barbell Stiff-Leg Deadlift",
+    "body_parts": [
+      "Legs/Hips",
+      "Core"
+    ],
+    "muscles": [
+      "Erector Spinae",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0085afbddf724bcca0d1b1b5c5cfce53.png",
+    "video": ""
+  },
+  {
+    "name": "Battle Rope Alternating Waves",
+    "body_parts": [
+      "Arms",
+      "Chest",
+      "Back"
+    ],
+    "muscles": [
+      "Biceps",
+      "Latissimus Dorsi",
+      "Chest"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/828ae8058b794d8ea6018c1fd3cfcc84.png",
+    "video": ""
+  },
+  {
+    "name": "Battle Rope Double Waves",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps",
+      "Triceps"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f0a4c734eae4417695af1b993bbca73d.png",
+    "video": ""
+  },
+  {
+    "name": "Battle Rope In-and-Out Waves",
+    "body_parts": [
+      "Arms",
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/df9ab9306e084dcf916db35ea53e23f9.png",
+    "video": ""
+  },
+  {
+    "name": "Battle Rope Slams",
+    "body_parts": [
+      "Shoulders",
+      "Back"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e4582023d03c42a983552eaaed7b9bd9.png",
+    "video": ""
+  },
+  {
+    "name": "Battle Ropes",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/bea6e2d419fb4dcf8b59a63c1b8dc4e5.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/1d5b4b0b81094b2a97a6e91ce0927765.gif"
+  },
+  {
+    "name": "Behind the Neck Press",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9e42bde1d2054b59a253aae28007268e.png",
+    "video": ""
+  },
+  {
+    "name": "Behind the Neck Pulldowns",
+    "body_parts": [
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/11dc69019ed64bf3af68ca2425c605c0.png",
+    "video": ""
+  },
+  {
+    "name": "Bench Dips",
+    "body_parts": [
+      "Shoulders",
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e0ff20ba64d74b49a453151663ea5aff.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/3225399b22b9406387405892521e023f.gif"
+  },
+  {
+    "name": "Bench Press",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ef649bec51294d4f9b5aae53b179c9de.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/3352597c376b46e1ac927a24e51043ca.gif"
+  },
+  {
+    "name": "Bench Press With Bands",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/fd5ddc5542904d71a2b2ace3d69dfd82.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/91b0d348524340919368a075a8c814ff.gif"
+  },
+  {
+    "name": "Bent-over Lateral Raise",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/141772a80d594ca8988bf0ec7c253f07.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/f3e5a73c5cb14ee1b1a9cc77f0e7a6e8.gif"
+  },
+  {
+    "name": "Bicep Curl-Machine",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ef1ea80b376242e1a9dd1dcc6a8b4e0e.png",
+    "video": ""
+  },
+  {
+    "name": "Bicep Stretch",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1ab3f1b4f2d34fdd9afcb3cf9e064acc.png",
+    "video": ""
+  },
+  {
+    "name": "Biceps Curls With Bands",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/aa23278d5b4843e09af744db841f75cd.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/1fb6a25141884579991d44b58409e9cb.gif"
+  },
+  {
+    "name": "Bicycle Crunches",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9b5d860f42554ab3ad4323bd3a85d8f3.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/893cc45673654ac9a8be356bf7314c70.gif"
+  },
+  {
+    "name": "Bird Dog",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/138c987b0b29413d910bc6cd3146fc69.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/4c2380a4ec9d4474893e629c5ba7653d.gif"
+  },
+  {
+    "name": "Bird-Dog Balance",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Erector Spinae",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ac62bd348caa4de297d9e8e7fd4d0f27.png",
+    "video": ""
+  },
+  {
+    "name": "Bosu Ball Crunches",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bosu Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/580a18009e8547a48ec202683c3f50c6.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/66d13320f72d4a22aa27943bbeb0bcd1.gif"
+  },
+  {
+    "name": "Bosu Ball High Knee Lunge",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Erector Spinae",
+      "Abs",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bosu Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/081d7ec1b57849f9bfb8dd1298603c2e.png",
+    "video": ""
+  },
+  {
+    "name": "Bosu Ball Push-Ups",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bosu Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/959c964b9d9340639ccc24915d129b4e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/ab19a4984c8847e6b00b524f504f4f17.gif"
+  },
+  {
+    "name": "Bosu Ball Single Leg Hold",
+    "body_parts": [
+      "Legs/Hips",
+      "Core"
+    ],
+    "muscles": [
+      "Calves",
+      "Posterior Thigh",
+      "Glutes",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bosu Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/35a8d458e25a47ebaa5f1d6ef068d6f7.png",
+    "video": ""
+  },
+  {
+    "name": "Bosu Ball Single-Leg Deadlift",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abs",
+      "Erector Spinae",
+      "Posterior Thigh",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bosu Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/66508c216dd348dd93124988457f3671.png",
+    "video": ""
+  },
+  {
+    "name": "Bosu Ball Squats",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bosu Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/df83914d21c941c18df3d6afd828b903.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/2e2ddab1452c40c1bc71ceedd04043e2.gif"
+  },
+  {
+    "name": "Bounce A Boat",
+    "body_parts": [
+      "Core",
+      "Legs/Hips",
+      "Arms"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1e8fe1ad7f96420c96816b0a04ffd9f1.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/cb1adca522344403b4908edc54da8531.gif"
+  },
+  {
+    "name": "Bounce A Boat With A Lunge",
+    "body_parts": [
+      "Core",
+      "Legs/Hips",
+      "Arms"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9622c6b03d964f98bf76d5e72a01cd9b.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/a257943293a84675b2f43fffa77ff34e.gif"
+  },
+  {
+    "name": "Box Jumps",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/bce3a6937d714b68b69e7f0449333c40.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/b3b56b3f50704f71a81103367700df81.gif"
+  },
+  {
+    "name": "Box Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f2dd306c9340411da42c7f0c6493dd53.png",
+    "video": ""
+  },
+  {
+    "name": "Box Step Up Knee Drive",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/caf2511aacb24f58b0aacfd401e86e92.png",
+    "video": ""
+  },
+  {
+    "name": "Box Step-Ups",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2f1ed61fa42249888b099fd3b2bf82d1.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/7231c1f44dd1425bbd7c4242a97f6b36.gif"
+  },
+  {
+    "name": "Bridge",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/3b2d4620d9314afbafa39c201966cf96.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/c4e3ec03f5aa4e6e95f5a4a118b0303b.gif"
+  },
+  {
+    "name": "Bridging Psoas March\n",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Burpees",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d1489755faa6437ab013409f51afc6b4.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/0878d2d7d1b84f379a2a86216a187853.gif"
+  },
+  {
+    "name": "C-Skips",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh",
+      "Calves",
+      "Abductor"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8fe97014d26542699423b2b49361f173.png",
+    "video": ""
+  },
+  {
+    "name": "Cable Glute Kickbacks",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/797049999bde491fa969652402b45492.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/2ef6ac6a190a4ee2839a66905bacf2b0.gif"
+  },
+  {
+    "name": "Cable Lateral Raise",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8b81a61b81494b1db76922e93d99913e.png",
+    "video": ""
+  },
+  {
+    "name": "Cable Pull-Through",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f25128c7d33440909ff96bc0dc7bce3d.png",
+    "video": ""
+  },
+  {
+    "name": "Cable Reverse Fly",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b8434ab9cf3b435ca60b449434cf8034.png",
+    "video": ""
+  },
+  {
+    "name": "Cable Rotation",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8d34db20a7ec46cbac203af1d69f53b1.png",
+    "video": ""
+  },
+  {
+    "name": "Calf Stretch",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6437c881020d4f119b4307cbd534148c.png",
+    "video": ""
+  },
+  {
+    "name": "Cardio Kickboxing",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Glutes",
+      "Quadriceps",
+      "Deltoids",
+      "Chest",
+      "Triceps",
+      "Abs",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d660e1ed9e8d4d3a88ac7fdea585b2cc.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/5b56bd6d6d764279a2a1470160901139.gif"
+  },
+  {
+    "name": "Cat-Cow Stretch",
+    "body_parts": [
+      "Back",
+      "Core"
+    ],
+    "muscles": [
+      "Erector Spinae",
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/92001c0381854f09ba82966678d6ca75.png",
+    "video": ""
+  },
+  {
+    "name": "Chest Flys With Bands",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/39f7a05ea8344eb5ac328084e6b2e154.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/15ffbdf7b40741adb472a470634bad8c.gif"
+  },
+  {
+    "name": "Chest Press-Machine",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c2a058afdf3645039f193cbde4780d40.png",
+    "video": ""
+  },
+  {
+    "name": "Chest Stretch",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5fda25bf15fe42f49f09241941e166b8.png",
+    "video": ""
+  },
+  {
+    "name": "Clamshell",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ea7e3fac9a1e47ce97f771f1c486c672.png",
+    "video": ""
+  },
+  {
+    "name": "Clapping Push-Up",
+    "body_parts": [
+      "Arms",
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/474a3eab1e7643bf95b2481b63b3fbf5.png",
+    "video": ""
+  },
+  {
+    "name": "Close Grip Push-Up",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest",
+      "Triceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/594183e85a204b8a953379a325911f86.png",
+    "video": ""
+  },
+  {
+    "name": "Close-Grip Bench Press",
+    "body_parts": [
+      "Arms",
+      "Chest"
+    ],
+    "muscles": [
+      "Triceps",
+      "Chest"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c1284de262da498cb98053e87d522cf1.png",
+    "video": ""
+  },
+  {
+    "name": "Close-Grip Dumbbell Bench Press",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest",
+      "Triceps"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c372ae7f64424f8baafdcd9b3136ee61.png",
+    "video": ""
+  },
+  {
+    "name": "Cool Down",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [],
+    "equipment": [],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Copenhagen Plank",
+    "body_parts": [
+      "Legs/Hips",
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7a05439fa2b849f5b8d9c56833874483.png",
+    "video": ""
+  },
+  {
+    "name": "Crawl On The Ground",
+    "body_parts": [
+      "Shoulders",
+      "Arms"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f23b4f7d801d4c189c51b56788f6bb72.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/ae9e82e301534591a3c3cd065544c655.gif"
+  },
+  {
+    "name": "Crossbody Calf Hug",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a44fa708e8a34133bbb001ddef69c2b1.png",
+    "video": ""
+  },
+  {
+    "name": "Crunch",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/484c2bde32db4d5ba6d8eb8d5bffda95.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/481e8ddd86a14373947183e2d8fd11f3.gif"
+  },
+  {
+    "name": "Crunch - Legs On Exercise Ball",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c65a0c7975084f1fac714457a5ec7d2f.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/340cdbedec9944f2991af0a68a3963a9.gif"
+  },
+  {
+    "name": "Curtsey Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a462fc2fca9b449db17469a40b896e08.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/ed6b600c2b944658b4d484d2ad54d61b.gif"
+  },
+  {
+    "name": "Dead Bug",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d40b0b740c9d4251aedbdc85f23bf0af.png",
+    "video": ""
+  },
+  {
+    "name": "Deadlifts",
+    "body_parts": [
+      "Back",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/94359d57808849bb8e9d7d07ad4a3964.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/a5182de1e74f4196899afce235b637ee.gif"
+  },
+  {
+    "name": "Deadlifts with Bands",
+    "body_parts": [
+      "Back",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a511cb555e994488982b1875a676a3fe.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/fbf269be831941bdaf33452b71675b99.gif"
+  },
+  {
+    "name": "Decline Bench Press",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e55ee81f6e034f57a36390059c6a82a1.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/06b0200c4770440eb40a025f22f7a9b5.gif"
+  },
+  {
+    "name": "Decline Dumbbell Bench Press",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2ee7ad87a4be4963b2b7f64e6da96e82.png",
+    "video": ""
+  },
+  {
+    "name": "Decline Push-Up",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f7fc3ab6730e45429b1509559747c496.png",
+    "video": ""
+  },
+  {
+    "name": "Decline Weighted Crunch",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c7bbc8f8c6534b10bee92ef7e1c69c70.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/a96648fea34146ebbb91e095740bf403.gif"
+  },
+  {
+    "name": "Diamond Push-Up",
+    "body_parts": [
+      "Arms",
+      "Chest"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b40f543e220c4011b1454cb8150b2219.png",
+    "video": ""
+  },
+  {
+    "name": "Donkey Kicks",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/758f564b763a49a9b6032e61b41fead4.png",
+    "video": ""
+  },
+  {
+    "name": "Dumbbell Bench Press",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2fa7490eb67a4d98bf200f65a4b79ef8.png",
+    "video": ""
+  },
+  {
+    "name": "Dumbbell Biceps Curls",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7a73b9ce660848cabb0efcfe11d755cd.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/5726a0931f814003a853b25ffda68710.gif"
+  },
+  {
+    "name": "Dumbbell Flys",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6f6f8e9f0982426ab6d75ad105304089.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/b33186dd059a48a497e492bef3ccb308.gif"
+  },
+  {
+    "name": "Dumbbell Good Morning",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/10a718e832614b6eb4bf5e3f0e9e3054.png",
+    "video": ""
+  },
+  {
+    "name": "Dumbbell Lunges",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/cbb91d68aa17453d96e15a4b9af70e23.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/52dbb65684434afbadee7661d1f7ec11.gif"
+  },
+  {
+    "name": "Dumbbell Pullover",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/152e77c8dd1a41d386b536af8873d591.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/073b2bd997344b089e6656eaf4d7d82a.gif"
+  },
+  {
+    "name": "Dumbbell Romanian Deadlift",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Posterior Thigh",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/651dc2d441a245e3b98d86d5b1e228ac.png",
+    "video": ""
+  },
+  {
+    "name": "Dumbbell Row",
+    "body_parts": [
+      "Back",
+      "Arms"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e621a5e715dc4500b82f7c5cf7f97605.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/00ed2639dbbb48268491c7691c7ee507.gif"
+  },
+  {
+    "name": "Dumbbell Shrugs",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/707941dc38164b4292e05a9f3a40daa9.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/88beb15bcff14cd69761c076e42ded5c.gif"
+  },
+  {
+    "name": "Dumbbell Side Bends",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Barbell Plates",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b034568dc89c4e5db3cf073bba600cb5.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/aedafe2096bf43b58887e44864bcec39.gif"
+  },
+  {
+    "name": "Dumbbell Side Plank Rotations",
+    "body_parts": [
+      "Shoulders",
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/88a6fbd2a92e4e58969f3e1d82916841.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/ea310253446b4091af441dc0206535c2.gif"
+  },
+  {
+    "name": "Dumbbell Snatch",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh",
+      "Trapezius",
+      "Triceps",
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/86ec0ff7df89494aa0a34b670cd68c69.png",
+    "video": ""
+  },
+  {
+    "name": "Dumbbell Thruster",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Kettlebell",
+      "Dumbbells",
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8920167aa17743b9b1da5e1efcbccb72.png",
+    "video": ""
+  },
+  {
+    "name": "EZ Bar Curl",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ff9663f3677a4dd6ad03cda212f0e0cc.png",
+    "video": ""
+  },
+  {
+    "name": "Elastic Band Bends Hip And Pulls Back",
+    "body_parts": [
+      "Core",
+      "Legs/Hips",
+      "Arms"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/aca4b21dde1d4d6fa0eb9fdcb7238c89.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/9e0587f4ab684ed9a6484b4b86691ab4.gif"
+  },
+  {
+    "name": "Elastic Band Plate Pull-down",
+    "body_parts": [
+      "Back",
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/54fd5edf0afc402d8b4fed5206839508.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/910ac9ac064944d98bb535bdc9c0eeca.gif"
+  },
+  {
+    "name": "Elastic Belt Swallow Balance",
+    "body_parts": [
+      "Arms",
+      "Legs/Hips",
+      "Core"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/bfeab10943f6498caebd36750af8f722.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/6132ed383541421daaba7b028209b6b2.gif"
+  },
+  {
+    "name": "Exercise Ball Bridges",
+    "body_parts": [
+      "Back",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ef5b3cfff970417a8d543602b7001939.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/e4823ff245b3497493d48679b7009594.gif"
+  },
+  {
+    "name": "Exercise Ball Buzzsaw Plank",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Erector Spinae",
+      "Abs"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/4f84e3f7e7a24b89a11f041f3308dbaa.png",
+    "video": ""
+  },
+  {
+    "name": "Exercise Ball Circles",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Erector Spinae",
+      "Abs"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/13ba469f43b242ba8b1e70d58017ce97.png",
+    "video": ""
+  },
+  {
+    "name": "Exercise Ball Crunches",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c96811e816014a81b94f331697c6826d.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/16e9f31081c540c0ad6247c4ec1d31b5.gif"
+  },
+  {
+    "name": "Exercise Ball Hyperextensions",
+    "body_parts": [
+      "Back"
+    ],
+    "muscles": [
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d808c0fb2ac543ac994a2ba315845b73.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/479f632cbc6542328493a783263fc37a.gif"
+  },
+  {
+    "name": "Exercise Ball Plank",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/78b7d23635d8422baf1d6e85fbf9a6fd.png",
+    "video": ""
+  },
+  {
+    "name": "Exercise Ball Pull-In",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/21193e8ba73e481896977f9abd4b1cc6.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/e04c245c152a4e89a737ea7762b0dd3d.gif"
+  },
+  {
+    "name": "Face Pull",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a6eb0019fc5643f1ae3e1f0406250d04.png",
+    "video": ""
+  },
+  {
+    "name": "Farmer's Walk",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Forearms",
+      "Erector Spinae",
+      "Abs"
+    ],
+    "equipment": [
+      "Kettlebell",
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0bd1cb94d6c947e7b1c1b10ca5615e5d.png",
+    "video": ""
+  },
+  {
+    "name": "Fast Arm Swing",
+    "body_parts": [
+      "Shoulders",
+      "Arms"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ee9e26a6a0ef4d19a96f9b020a4283bf.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/06cc65b070bd4fc3bcb925edd98f7325.gif"
+  },
+  {
+    "name": "Fingertip Push-Up",
+    "body_parts": [
+      "Arms",
+      "Chest"
+    ],
+    "muscles": [
+      "Chest",
+      "Forearms"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b8c84ef7024240f896da008e61c05dac.png",
+    "video": ""
+  },
+  {
+    "name": "Floor Press",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Barbells",
+      "Dumbbells",
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/00e7cda881e84caab62e67b4231e6693.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - Adductors",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Adductor"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7b1db2cbe2a840dda3dc20e74b0202cf.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - Calves",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1f5d176a536f4697882e9cff1826b196.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - Chest",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9f336382c9d04aa7a2e97ff5ed4c2547.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - Hamstrings",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8533cb00b8a544ac9435d993fcf72825.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - Hips",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ab9bd2f01dec460eb8dbca8e3c1818a8.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - IT Bands",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abductor"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f340a770f26f4f81a14190cbe50191f0.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - Quads",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d77c6486a34e45d580f52253a7cc41cd.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - Tibialis Anteriors",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8b866c53e4384e498f2761194922b177.png",
+    "video": ""
+  },
+  {
+    "name": "Foam Rolling - Upper Back",
+    "body_parts": [
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/31a74fa3ebb84a01b90bd14ae728c0fd.png",
+    "video": ""
+  },
+  {
+    "name": "Foot Rolling",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e1d9a52273e2477da7dd5b22f6b336d3.png",
+    "video": ""
+  },
+  {
+    "name": "Forward Jumping Lunges",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/11817a74672248d68e3be61381dd9706.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/2215eb2c818b4308808cd77b552feb72.gif"
+  },
+  {
+    "name": "Frog Pose",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Adductor"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/453d7773287344acab1febf6b9fd90c5.png",
+    "video": ""
+  },
+  {
+    "name": "Front Arm Dumbbell Raise",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9e43d4ecaa514a70ac3128b514f0d54e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/35b86922acfc4c2582b208b9a2c652c0.gif"
+  },
+  {
+    "name": "Front Raises With Bands",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a8e075672e0c4a4398fd5722107ad72a.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/6f6c747814564bfda702c88ca39b2de0.gif"
+  },
+  {
+    "name": "Front Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9b0758eeffda459d9dda334fcdc5dd02.png",
+    "video": ""
+  },
+  {
+    "name": "Glute Bridge Hold",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c2d6d8770fd04ad1b733557d3238fbae.png",
+    "video": ""
+  },
+  {
+    "name": "Glute Stretch",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/aa3523f5768a47a58f5f3f4f74d52739.png",
+    "video": ""
+  },
+  {
+    "name": "Goblet Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Glutes"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/574b6129d5654f34a969bf040be0b225.png",
+    "video": ""
+  },
+  {
+    "name": "Greatest Stretch",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Chest",
+      "Latissimus Dorsi",
+      "Erector Spinae",
+      "Adductor",
+      "Glutes",
+      "Quadriceps"
+    ],
+    "equipment": [],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9fb1e0e0d98b45b69ed4f963c6074c59.png",
+    "video": ""
+  },
+  {
+    "name": "Hack Squat Good Morning",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d5cb2100a2f54a749bb36eefaabcea7a.png",
+    "video": ""
+  },
+  {
+    "name": "Half Crimp",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Hangboard"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/889bab3fde954e1b825ad8c824d77dc2.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/098df0c04ce843c984767bd2568297b3.gif"
+  },
+  {
+    "name": "Hammer Curl",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5f50977598c3478ca4419e9e25271bf4.png",
+    "video": ""
+  },
+  {
+    "name": "Hamstring Stretch",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/748faf45277f483b9b66fcb857c706a0.png",
+    "video": ""
+  },
+  {
+    "name": "Handstand Push-Up",
+    "body_parts": [
+      "Shoulders",
+      "Arms"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Triceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/54f1bce0c94c4bfbbed8483f8e63e226.png",
+    "video": ""
+  },
+  {
+    "name": "Handstands",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/fd5b4d3b1c5d40ff94848231c80175a2.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/0c27554be9e140e5a9e7ba3e5fc60341.gif"
+  },
+  {
+    "name": "Hang with 135 Degree Elbow",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Hangboard"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ebd4f124646047c7bd83a8d041d5a8f5.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/0a5b7823c4064adda3eda819b49ae733.gif"
+  },
+  {
+    "name": "Hang with 90 Degree Elbow",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Hangboard"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/aa25bef7137641c98e679bcce97aa9fc.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/57cdb05982ce499dbb44b8c6c0abade9.gif"
+  },
+  {
+    "name": "Hangboard Pull-ups",
+    "body_parts": [
+      "Back",
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms",
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Hangboard"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/41e8530176b0414b9639c09cbfdd94f9.png",
+    "video": ""
+  },
+  {
+    "name": "Hanging Leg Raise",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2202cb0046b5490aaa1113bffaf1ad30.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/0c51d005e3ec4f7db6d5fd7d2db7b5c7.gif"
+  },
+  {
+    "name": "Hanging Windshield Wiper",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8c1dd4291be4481bbed6d1097a625590.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/0adcac5553ae4740a2470156c3577fb9.gif"
+  },
+  {
+    "name": "Hex Bar Deadlift",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/12e29be42fcb45238b7ba598cee0f9bc.png",
+    "video": ""
+  },
+  {
+    "name": "High Knees Against Wall",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b11708fc281a4e6fb97b0426e7a3551d.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/b573636325594e49919d14dde144b849.gif"
+  },
+  {
+    "name": "High Pulley Crunches",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/77a485279dac44fdb1abe65c8a5e95b8.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/59c2b43affe24cb186f5abe38fc9d740.gif"
+  },
+  {
+    "name": "HighÂ Knees",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e1b5819c29a540cebbfa5c3fed7ddd6e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/ef8bb19d6f464502922db6edabd1c615.gif"
+  },
+  {
+    "name": "Hip Adductions With Bands",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Adductor"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/261252c14641491ebc60078cbc57b75c.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/280121bae151466b804b6f967718d02c.gif"
+  },
+  {
+    "name": "Hip Thrust",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/de49ad89244947bda56c9d535d3bb8c3.png",
+    "video": ""
+  },
+  {
+    "name": "Incline Bench Press",
+    "body_parts": [
+      "Shoulders",
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7d7fcc77de084ec2ab162332eccb18e8.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/10ba4e6d9b1c456cac5e8ccb900fccb2.gif"
+  },
+  {
+    "name": "Incline Dumbbell Bench Press",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/20833dfbe4b14866b7d6c8cf8d2cff7a.png",
+    "video": ""
+  },
+  {
+    "name": "Incline Dumbbell Flys",
+    "body_parts": [
+      "Shoulders",
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5b71965e6b7c444b888aded9668b1c32.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/f694485841be47ab8b6a25517e421d4d.gif"
+  },
+  {
+    "name": "Incline Leg Press",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/76214cf44aed46e48ded7441c60340a3.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/358d3c02cbfa4099a5beac1dec437f53.gif"
+  },
+  {
+    "name": "Incline Leg Raise",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/4401feaa0f0a4ec5b7b943f35de70f28.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/223582f66686443698e306584ae7fc55.gif"
+  },
+  {
+    "name": "Incline Push-Up",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/053d1cd220974a9896b54d89b2a15219.png",
+    "video": ""
+  },
+  {
+    "name": "Incline Walking",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f3a6e222478e4240891744f0bfa8a2d8.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/563621f4d78149cd9fab178770fc1158.gif"
+  },
+  {
+    "name": "Indoor Rower",
+    "body_parts": [
+      "Back",
+      "Legs/Hips",
+      "Arms"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Indoor Rower"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d7b56b4c168f498e96a6514fd5789ca7.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/d9e691b3559b4546b5babbb8d152ec09.gif"
+  },
+  {
+    "name": "Inner Thigh Stretch",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Adductor"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5c8ce8d4305a426fa4bd3e2e8c4aa0c0.png",
+    "video": ""
+  },
+  {
+    "name": "Inverse Nordic Curl",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/056b7f2885cb43d1b15d89c68edb7b0f.png",
+    "video": ""
+  },
+  {
+    "name": "J Lo S",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abductor"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5b372293f99748529ed1997fc8cf709a.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/0b0018d38b9144349a0692d54a4bd8d3.gif"
+  },
+  {
+    "name": "Jogging",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Glutes",
+      "Quadriceps",
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/3e58cc7f5f4848ef9f59b936bd7510c9.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/0a5d8cc25a2c4d3a837a0f28c53d0a87.gif"
+  },
+  {
+    "name": "Jumping Jacks",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/24812cdf27ad41e4a229974a7f11230f.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/1d7991d3b2fa44dbb625d7b6118f1a5b.gif"
+  },
+  {
+    "name": "Jumping Lunges",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e505a8e2b391449c8e4575b012058ff0.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/776a46f360bc4b8cb8caecb31f1560e2.gif"
+  },
+  {
+    "name": "Kettlebell Windmill",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/443b6fd719f2474994d69a836063764f.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/7ee199fa85144fd8b7faf62937a133af.gif"
+  },
+  {
+    "name": "Knee Hug",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/3aded238b0084cc7831ee0e3801c7690.png",
+    "video": ""
+  },
+  {
+    "name": "Knee-Up Lunges",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/359be6df692248b39de020a21988a417.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/604df8b5ba26407ca001812785fc5a72.gif"
+  },
+  {
+    "name": "Knee-Up Walking Lunges",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a655489b75a04d2d9078c4b62fee7b23.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/a3336beffcce4483b3639f789b5151c6.gif"
+  },
+  {
+    "name": "Kneeling Ab Wheel Rollout",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a5e211be8b804fbcad68453df7cd36d2.png",
+    "video": ""
+  },
+  {
+    "name": "Kneeling Anti-Rotational Press",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a8000aed056f497a9de211b06a079fc0.png",
+    "video": ""
+  },
+  {
+    "name": "Kneeling Cable Woodchop",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/02941afd8b6e4ac1b41d773af8e85054.png",
+    "video": ""
+  },
+  {
+    "name": "Kneeling Position And Do The Top Hip",
+    "body_parts": [
+      "Shoulders",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8d8f6c0310244f5fa923e6134dac5286.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/156344d825bb4a85a7c653c0f51a6fa8.gif"
+  },
+  {
+    "name": "Kneeling Push-Ups",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/06be456a186e449d8245754d89e0d7df.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/82d7cfba7a6c4e97a63fff8d66aaac8b.gif"
+  },
+  {
+    "name": "Lat Pulldowns",
+    "body_parts": [
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/763440a0055544618ba435893df128a6.png",
+    "video": ""
+  },
+  {
+    "name": "Lateral Band Walks",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abductor"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5e788fd2b33145af8a3dad81db473067.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/17aa1e7a578446bea3b034ab2ab9c211.gif"
+  },
+  {
+    "name": "Lateral Dumbbell Raise",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e7c754651777458ebdead9cf0c81a19f.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/f14fc65a1bbf4d56962d923d31a9ef98.gif"
+  },
+  {
+    "name": "Lateral Leg Swings",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Adductor",
+      "Abductor",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/970153c68a224eb0bed7506352d8a377.png",
+    "video": ""
+  },
+  {
+    "name": "Lateral Raise-Machine",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6b1ca8c8436f457d8bee39939d134c11.png",
+    "video": ""
+  },
+  {
+    "name": "Lateral Raises With Bands",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/232e71a0f1124ce1a703e1ca95feb234.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/f2cf0cd200d345c5bc64c8843e67a3ad.gif"
+  },
+  {
+    "name": "Lateral Squats or Side Squats",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/efd15cf3e047496da0482c54263ea1a3.png",
+    "video": ""
+  },
+  {
+    "name": "Lateral step ups",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Lean Over And Touch Your Shoulders Alte",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/76cecac997134334a71354e54edc654f.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/52b36df67c7f4e639b8f50a32cfafd04.gif"
+  },
+  {
+    "name": "Leg Extensions",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/57a972864c4b4d76957d6a3cd262f2ce.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/09dd0e34ec9c4edb840abbb9a0dd88e7.gif"
+  },
+  {
+    "name": "Leg Raise Toe to Bar",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/4dc9e419445c4a1ba7e5322aead49026.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/97c6b96d6e5b43f49d81234ceeab1a05.gif"
+  },
+  {
+    "name": "Leg Swing Front and Back",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a7f30de21b674ff5bc10d8414c42e08f.png",
+    "video": ""
+  },
+  {
+    "name": "Lie On And High Knees",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b4731e872fce4a909dbb7f48e30857b1.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/03c219899cd94201aad074f4655dc848.gif"
+  },
+  {
+    "name": "Lie On One Leg Supine Hip And Knee",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/75779c44541f4fb2930d6abeacf888c8.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/d1987ec19e6a4469b11f47500b5c88fe.gif"
+  },
+  {
+    "name": "Lie on Your Back Glute Bridge",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/32013b35b43448c08925aff3527f9a73.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/44d0cab7a2ec4f2abd2da1ec48fbd1e0.gif"
+  },
+  {
+    "name": "Loaded carry",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [],
+    "equipment": [
+      "Kettlebell"
+    ],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Loaded creeper march",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Low Cable Flys",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f40cf7c85b7c4c4186a8df729400af33.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/ba1b5a91f5b8402d8b70f8edc4f8c744.gif"
+  },
+  {
+    "name": "Low Pulley Biceps Curls",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c6f14b164f324a908ea8e77afbefc5af.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/152d23567b76412ba88c85549109b288.gif"
+  },
+  {
+    "name": "Lucky Cat",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/103a10419a8f4938bc916eda669ab519.png",
+    "video": ""
+  },
+  {
+    "name": "Lunge Down",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7ba998cc119b4506b028d7a359f7f6a4.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/8f3cb37a1d2344f6bf53c438487c138d.gif"
+  },
+  {
+    "name": "Lunge Pulls",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5ed7bf6336ac4f3e93a99c82072a87f1.png",
+    "video": ""
+  },
+  {
+    "name": "Lunge Sideways From Hip To Hip",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/24e02d93bb96442facd0fa8adaab0d5f.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/a7887e20bb9742d0a74f77295878cd82.gif"
+  },
+  {
+    "name": "Lunge Stretch",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f86d34d3c1e24463b80bf31e94b76445.png",
+    "video": ""
+  },
+  {
+    "name": "Lunge Up With A Heavy Bow",
+    "body_parts": [
+      "Shoulders",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0f1f9aa714a740daae78d97a28aa3ab5.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/6676e1a1e393435bbd54255999306112.gif"
+  },
+  {
+    "name": "Lunge With Elastic Band",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/727d620f69a74b1cb1181dd2e056c149.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/062f6126c734424fb039c95899203813.gif"
+  },
+  {
+    "name": "Lying Face Down Plate Neck Resistance",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/04bc19eed39b48aba02884aa76f514f5.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/32e8da1a69e84c48895855425f314bdf.gif"
+  },
+  {
+    "name": "Lying Face Up Plate Neck Resistance",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/af1c7faffb8c4677875387b37c55b1aa.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/92ee2b7fbd034e24b77e3936852a9d56.gif"
+  },
+  {
+    "name": "Lying Leg Curls",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d9650463196f46b1ba753e574e51753f.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/4b73e9693a2648cbb6d8b7a2cb4f3703.gif"
+  },
+  {
+    "name": "Lying Leg Curls with Resistance Band",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6f5e8e9947024a05a9adef1f3f2e9695.png",
+    "video": ""
+  },
+  {
+    "name": "Machine Crunches",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/78217b7f2d854d60bd1394cb25461651.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/ecd2030acdaf4b01afcb9faccdeeac08.gif"
+  },
+  {
+    "name": "Machine Hyperextention",
+    "body_parts": [
+      "Back",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/26e84540cca340a59639fd075e1ffd5b.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/731332c56d2a42be8d8f2806a0510e2e.gif"
+  },
+  {
+    "name": "Machine Reverse Fly",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1158aba5b06640c990d55d3e67447b07.png",
+    "video": ""
+  },
+  {
+    "name": "Med Ball Push Press",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f3732228e5a945a3a56cb650910b6798.png",
+    "video": ""
+  },
+  {
+    "name": "Medicine Ball Push-Ups",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d7c8f1b15e644115ab969a2281adea21.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/d4908fcd700e4c8c9e594fb99f2ad5ee.gif"
+  },
+  {
+    "name": "Military Press",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0d6ea7818890423abeab2370c9af77f3.png",
+    "video": ""
+  },
+  {
+    "name": "Mountain Climbers",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8b3b5ec4494d41b18dd5242c03600dc9.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/2576cba0d0494a3f9daa07d93e202a49.gif"
+  },
+  {
+    "name": "Neck Bridge Prone",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/aab05073bef048518be6a9307cae2707.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/d5ba46e3b1bb45dfa45e92a6dcc828de.gif"
+  },
+  {
+    "name": "Neck Flexion With Positive Pressure Of",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/02238773d124427c99a051ad0a99b611.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/3126bb78eb1745dc850e9c1ec18f7269.gif"
+  },
+  {
+    "name": "Nordic Hamstring Curl",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2af593a95eef4f6ab9955569f21def16.png",
+    "video": ""
+  },
+  {
+    "name": "Oblique V-Ups",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1f8ccf9215124368b3a8102397f1c7ad.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/80b3d3b2c80d46458766faa74ed5f57b.gif"
+  },
+  {
+    "name": "Offset Push-Up",
+    "body_parts": [
+      "Chest",
+      "Core",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/fd8e9187af004ecf84a53e4bf82e5657.png",
+    "video": ""
+  },
+  {
+    "name": "One Arm Bar Hangs",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/65de20473742471e88320a64eee9189e.png",
+    "video": ""
+  },
+  {
+    "name": "One Arm Dumbbell Row",
+    "body_parts": [
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a1f9bc7bca334ab5bb1b3e43a5a2fac1.png",
+    "video": ""
+  },
+  {
+    "name": "One Arm Kettlebell Military Press To Th",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2cca72c5935240bb91a907cf917e4aa6.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/62fa534e25184b37bb7459063b26c1b1.gif"
+  },
+  {
+    "name": "One Arm Kettlebell Swings",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1031cd0baf8642c1a4cd2904a42f5eef.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/7fd52dd200894c849d8e3ddf0c37b940.gif"
+  },
+  {
+    "name": "Open Hand Grip",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Hangboard"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c589c41861f94149aa7f2ade6d6308be.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/d873e043152946b89b4e2945a5c41c27.gif"
+  },
+  {
+    "name": "Outer Thigh Stretch",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abductor"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/646b0d0667ff45e294aaf30c285c6e7b.png",
+    "video": ""
+  },
+  {
+    "name": "Overhead Ball Slam",
+    "body_parts": [
+      "Shoulders",
+      "Back",
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5fafa8557f1349738a770206b3bbd438.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/b5428ce748dc4c4496a762b8b4ecc3d7.gif"
+  },
+  {
+    "name": "Parallel Bar Dips",
+    "body_parts": [
+      "Shoulders",
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7dfb3cb3a83d448c8e274b16ca3ea27a.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/772d34122a96437a8f465579c4f18f43.gif"
+  },
+  {
+    "name": "Pec Deck Flys",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/40c7687e54f7451a85c01c65aa487471.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/16e11db17c7c4993874fb3095f03ffbe.gif"
+  },
+  {
+    "name": "Pike Push-Up",
+    "body_parts": [
+      "Shoulders",
+      "Arms",
+      "Chest"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ca197b4ed5774613be000176993e42c5.png",
+    "video": ""
+  },
+  {
+    "name": "Plank Jacks",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/bc4a8f1929de4eb98a247a4fed83e45e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/af29a7c88fd546549c2856de8fe5dfa8.gif"
+  },
+  {
+    "name": "Plank Jacks",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/213895aab0664aec83184d586ff37fb0.png",
+    "video": ""
+  },
+  {
+    "name": "Plank Row",
+    "body_parts": [
+      "Back",
+      "Core"
+    ],
+    "muscles": [
+      "Erector Spinae",
+      "Latissimus Dorsi",
+      "Abs"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f19b5acb37144b1eb9dc948cf9d4b06c.png",
+    "video": ""
+  },
+  {
+    "name": "Plank Step Ups",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f4a235f7a75449d3b411b5af104301f9.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/9e06bef394ba42e1be9d8b840d12c46c.gif"
+  },
+  {
+    "name": "Plank with Lateral Movement",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6db5eebb79b742f8b400517074b78f9b.png",
+    "video": ""
+  },
+  {
+    "name": "Plank with Rotation",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/62ae32cf4f8748acbe631eed89845599.png",
+    "video": ""
+  },
+  {
+    "name": "Planks",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6b68c78df20a44f09d0f1917318cd865.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/fcb940766db4439eb4ae0c107109fe82.gif"
+  },
+  {
+    "name": "Power Clean",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Glutes",
+      "Calves"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a6ca0bebaa7847e5acb0674c0cb13551.png",
+    "video": ""
+  },
+  {
+    "name": "Power Point",
+    "body_parts": [
+      "Back",
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/05cdbcfeeae94080a2504d96b4b1641d.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/a27fca012b4c49278a6ba1f337d558f1.gif"
+  },
+  {
+    "name": "Power Squats",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/3028007b33e649578e78a69147f98dea.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/1207ab0a60574e9d93c51023ad9d388c.gif"
+  },
+  {
+    "name": "Preacher Curls",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Barbells",
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c1c2a9258a2c4504b4acb23e0762bd7f.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/6c66420935274f91959b1150bbe4a067.gif"
+  },
+  {
+    "name": "Prisoner Calf raise",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Prone A's",
+    "body_parts": [
+      "Back",
+      "Shoulders"
+    ],
+    "muscles": [
+      "Latissimus Dorsi",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/321a1dabb727463e80b2c55a39bede10.png",
+    "video": ""
+  },
+  {
+    "name": "Prone Cobra",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Erector Spinae",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9faa8965c62a459ea2c4221662976c42.png",
+    "video": ""
+  },
+  {
+    "name": "Prone Hip Circles",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Adductor"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8b45a6c718414407a16f4f72717b594a.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/31b57510e343437ebafaddadd46d966f.gif"
+  },
+  {
+    "name": "Prone I's",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/4e0d6bd09a9449b8863031c72c0e0239.png",
+    "video": ""
+  },
+  {
+    "name": "Prone T's",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e48c41d9a5d64f1bbc894f864434d6c3.png",
+    "video": ""
+  },
+  {
+    "name": "Prone W's",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/3a0f721055e54a5a8e5c4f13536ff1ef.png",
+    "video": ""
+  },
+  {
+    "name": "Prone Y's",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9d87eead182c4f9482a108d96f4a13ce.png",
+    "video": ""
+  },
+  {
+    "name": "Pull-ups",
+    "body_parts": [
+      "Back",
+      "Arms"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/abd90c1ff2444c7abc4fdf396713ffc2.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/ed2e7233d29143b991a51dac32dc77f3.gif"
+  },
+  {
+    "name": "Push-ups",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/cd6716f709454ff9be3061659abb88e1.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/57ad64013c0146eb964153e3aa40e590.gif"
+  },
+  {
+    "name": "Quad Stretch with Reach",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8f81b4c7a3d74bee99bd5aeb39305622.png",
+    "video": ""
+  },
+  {
+    "name": "Quadriceps Stretch",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/4a5e4e185ebb44c9a7536dc198fa6e7b.png",
+    "video": ""
+  },
+  {
+    "name": "Rainbow Slam",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Abs",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e284185ae6cc4beea22e7dab03fd6d8b.png",
+    "video": ""
+  },
+  {
+    "name": "Rest",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [],
+    "equipment": [],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Reverse Curl",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/194bf560bddc46ac9e0683e99573dc5d.png",
+    "video": ""
+  },
+  {
+    "name": "Reverse Flys With Bands",
+    "body_parts": [
+      "Back",
+      "Arms"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d52c7b5e30a94059910bc7a830135641.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/1a9907c58dc64c9492636f72b1e4ddba.gif"
+  },
+  {
+    "name": "Reverse Grip Tricep Pushdown",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/58b0eb82d5c244a9ad217a3c1217ce44.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/e313397366fb40dbab2fa76317ed8a26.gif"
+  },
+  {
+    "name": "Reverse Hack Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/973d2f4246f84e31b54dce1320e3089a.png",
+    "video": ""
+  },
+  {
+    "name": "Reverse Lunge",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9fb7fb66cb974fe382285e52f806fc6c.png",
+    "video": ""
+  },
+  {
+    "name": "Reverse Step-Down",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0e362d86c58d429dae2c9e29f4663f4f.png",
+    "video": ""
+  },
+  {
+    "name": "Reverse Wrist Curls",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6fbe9a36536344e7923f63440a6c3cc8.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/db32ad6ed01246eeaa842bdb3d4cbe77.gif"
+  },
+  {
+    "name": "Romanian Deadlift",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/36b2dcbfc69c4f0c83562e4aa4bc96dd.png",
+    "video": ""
+  },
+  {
+    "name": "Run Lunges",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/93cf48fb98424ddfb7836d80696981ac.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/8972e454453047769bb936bb4be07a67.gif"
+  },
+  {
+    "name": "Running Butt Kicks",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/cd47b1c43d3140638fe7e67a7408138f.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/8d530694248e4fc4952dceb6b33097e6.gif"
+  },
+  {
+    "name": "Running In Place",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d1d0f3a80fa44a06ac8a5bda86da6a1a.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/d0c84cb012b44562bce3412244abe34e.gif"
+  },
+  {
+    "name": "Running With High Knees",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/921d7123527f4c72ab067691c72caa16.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/d8ed553862e44c4eb6113aa9fb544a13.gif"
+  },
+  {
+    "name": "Running With High Knees (Faster Pace)",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a7db8663356e4a95b09012aee938d70d.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/25b790742ad147e5aa3f8b3d2be54d69.gif"
+  },
+  {
+    "name": "Russian Twist Med Ball Slam",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/85cf1c87a02a44d6bebeeab77a648d80.png",
+    "video": ""
+  },
+  {
+    "name": "Russian Twists",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5ef9a6ae34ab429a9cff982b3e1fc769.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/37a9151b434d446cbbc7ab9a5f9d58ea.gif"
+  },
+  {
+    "name": "Saw Plank",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/bd66b93c206c49dca7cf60d8eb94be41.png",
+    "video": ""
+  },
+  {
+    "name": "Scapular Pull-Up",
+    "body_parts": [
+      "Shoulders",
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1e708875338248628da3ef2b46c97cb3.png",
+    "video": ""
+  },
+  {
+    "name": "Seated Cable Row",
+    "body_parts": [
+      "Back",
+      "Arms"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/16335bdf97094dec9a9c84692adb60b6.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/fd79bfe0ba884bc4bd8b169330714ffe.gif"
+  },
+  {
+    "name": "Seated Calf Raise",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d8c833bff3384030a2b325c6ec384c47.png",
+    "video": ""
+  },
+  {
+    "name": "Seated Dumbbell Concentration Curls",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/31fd7bc7dbda4478b85df651a6fcd4d2.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/9fe477c9f5924adc90e01e442f8045b8.gif"
+  },
+  {
+    "name": "Seated Dumbbell Press",
+    "body_parts": [
+      "Shoulders",
+      "Arms"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/78fd6ae629874f2da3b7055a6c01d28c.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/5874269a555543aeb531c4e8a08cfe3c.gif"
+  },
+  {
+    "name": "Seated Dumbbell Triceps Extensions",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7296de4db498423e9adcb2d47e8d0e56.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/e2b87d60d8aa4b5180e5b48c816649ae.gif"
+  },
+  {
+    "name": "Seated Front Press",
+    "body_parts": [
+      "Shoulders",
+      "Arms"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/35bd273926c3477ebf4ff5137417bf75.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/8a054fb9ac0f474fab5d632886b31084.gif"
+  },
+  {
+    "name": "Seated Head Harness Neck Resistance",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Trapezius"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ad5fa335edd74ce6bc5e1b0228702b66.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/4a1cbd0fc2354015b815e619bf8d35ea.gif"
+  },
+  {
+    "name": "Seated Lat Pulldowns",
+    "body_parts": [
+      "Back",
+      "Arms"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6c846a9e342c479e85173120f5838f5b.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/fac4727b2c6d4dd3b11148d5754f4184.gif"
+  },
+  {
+    "name": "Seated Leg Raise",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b627c4f1fa564dbebe7476f75daed118.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/ef41f7326ca64185bb4e334bdf8e2b48.gif"
+  },
+  {
+    "name": "Seated Resistance Band Tibialis Raise",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/bba199befb984f54b2275b944587eee9.png",
+    "video": ""
+  },
+  {
+    "name": "Seated Scissor Kicks",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c75562d0e8cc45f6821645a406154a00.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/d1fb8e7ed7324f3abc4821609fc19b91.gif"
+  },
+  {
+    "name": "Short Stride Running",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/231fccb373234abdb9fa2484c56c945b.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/03ff026442124473a7b667cf5abb7855.gif"
+  },
+  {
+    "name": "Shoulder Press-Machine",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/3d9463b7866946e28f7902c41f2fafa8.png",
+    "video": ""
+  },
+  {
+    "name": "Shoulder Stretch",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7be068ae249a40e59958ab751939b456.png",
+    "video": ""
+  },
+  {
+    "name": "Side Plank",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9d01ae0cc3f24d7aa21ae1c4d58821fd.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/dedbf2fb87a84f3287e0da5713b89818.gif"
+  },
+  {
+    "name": "Side Plank Knee To Chest",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9c0167d8747149ae84652f31e6b0b221.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/7941c50c99254e0fbd4fa7c7b81a90ae.gif"
+  },
+  {
+    "name": "Side Plank with Leg Raise",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/98ca29bb98894abfb359b262fdfe14ef.png",
+    "video": ""
+  },
+  {
+    "name": "Single Arm Lat Pulldown",
+    "body_parts": [
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/8c24527c5d094fd49d638fd7cdc2f58b.png",
+    "video": ""
+  },
+  {
+    "name": "Single Arm Overhead Farmers Walk",
+    "body_parts": [
+      "Whole Body",
+      "Core",
+      "Shoulders"
+    ],
+    "muscles": [
+      "Abs",
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1944015f13e34e9caac40ad75520aba3.png",
+    "video": ""
+  },
+  {
+    "name": "Single Arm Scap Pulls",
+    "body_parts": [
+      "Shoulders",
+      "Arms"
+    ],
+    "muscles": [
+      "Latissimus Dorsi",
+      "Forearms"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a5ec839845934cd7bc5f16a06d32f95b.png",
+    "video": ""
+  },
+  {
+    "name": "Single Leg Bridge",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/fb2ae4e3fea049d2bab36517badb90af.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/49bd50a5599646c281c9556ace269f87.gif"
+  },
+  {
+    "name": "Single Leg Curl",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Exercise Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/97d9cc3d42924589807b48eb974f4c42.png",
+    "video": ""
+  },
+  {
+    "name": "Single Leg Deadlift",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/55648fb86c824f978327b86a30f5c506.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/c182f402900a423485c802c65741cb99.gif"
+  },
+  {
+    "name": "Single Leg Shoulder Press",
+    "body_parts": [
+      "Core",
+      "Shoulders"
+    ],
+    "muscles": [
+      "Abs",
+      "Erector Spinae",
+      "Deltoids"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/871a810107074216abc666cfffb883fd.png",
+    "video": ""
+  },
+  {
+    "name": "Single Leg Squats",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c32a7718644c431eae7d5e2ccf284fb3.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/dce212009be24971a949fa8b386df8c3.gif"
+  },
+  {
+    "name": "Single-Leg Calf Raise",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight",
+      "Barbell Plates",
+      "Kettlebell",
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/dde15604bd31497c81051ed6f24eff23.png",
+    "video": ""
+  },
+  {
+    "name": "Single-Leg High Knee Jump",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6dd189740b92475aa399461dc53d9275.png",
+    "video": ""
+  },
+  {
+    "name": "Single-Leg Hip Bridge",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/828d72db88704bd580f44d25ed3e3ed4.png",
+    "video": ""
+  },
+  {
+    "name": "Single-Leg Hops",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves",
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/511f9cb34e794a3caf658a28013fb5e5.png",
+    "video": ""
+  },
+  {
+    "name": "Sit-ups",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/fdbf67c2083348f98df7524d97573d8e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/282ed5dcf78a40c3a53a4b681797bd09.gif"
+  },
+  {
+    "name": "Ski Step",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e18a734f9ee743b1910a567c9584f671.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/d7c23117a87d438ca95a8cd51134bbba.gif"
+  },
+  {
+    "name": "Skipping Rope",
+    "body_parts": [
+      "Whole Body",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b1dc3bab409242faa5a7063068d021cf.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/d884420e706e4202a568431d02a287f4.gif"
+  },
+  {
+    "name": "Slope Hang",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Hangboard"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0b5c3e11a4d94af7abec495c6969f683.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/56e596a50468484fafb05bb47da78a40.gif"
+  },
+  {
+    "name": "Smith Machine Reverse Kickbacks",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0f0d8ed155de477bbfb46cb06f7dc753.png",
+    "video": ""
+  },
+  {
+    "name": "Smith Machine Shoulder Press",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/50970a06614b490abd1ab4a6026c6da5.png",
+    "video": ""
+  },
+  {
+    "name": "Smith Machine Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d372291045c24bcab4e5719a07879a6e.png",
+    "video": ""
+  },
+  {
+    "name": "Snatches",
+    "body_parts": [
+      "Legs/Hips",
+      "Shoulders"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/1703f2a39d3144eb9e370ca8ae7232e5.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/6e3c004ea6ab438b87d39fc7e481527a.gif"
+  },
+  {
+    "name": "Soleus raise",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Split Bench Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/bd9398666ed248418c215a12804d9003.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/79f139f3f7154759b286c200725f71e2.gif"
+  },
+  {
+    "name": "Spring With Lunge Quick Punch",
+    "body_parts": [
+      "Core",
+      "Shoulders"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2f73cf2e0d364c5c893fb5959ece8823.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/67614310dc5144cbadc78b349dab1251.gif"
+  },
+  {
+    "name": "Squat Jumps",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9f8b67224dae40698aab1a94622aca8b.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/13753afaebe94cfa9ec95e74b4b7235a.gif"
+  },
+  {
+    "name": "Squats",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6db312d84ee549c9b390065c8d86128e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/39ce1cd8450e4e2aab7afd6be34d740e.gif"
+  },
+  {
+    "name": "Standing Cable Crossover",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9100290b89044006ac99021602069a6e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/a91748cd13374093924a0a4259296913.gif"
+  },
+  {
+    "name": "Standing Calf Raises",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a052735df68c4fe498e7f85ea103da1c.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/4fb1cc58656345a1b4ea98bdfe662328.gif"
+  },
+  {
+    "name": "Standing Forward Bend",
+    "body_parts": [
+      "Legs/Hips",
+      "Core"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Erector Spinae",
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ab94833840cd495cbcf48c9b43ffcea5.png",
+    "video": ""
+  },
+  {
+    "name": "Standing Hamstring Curl",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/58bef2b723f34aa0b82412ac3542afad.png",
+    "video": ""
+  },
+  {
+    "name": "Standing Knee-to-Elbow",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6f7d39d62b334e39bb3b3e4991bde41b.png",
+    "video": ""
+  },
+  {
+    "name": "Standing Leg Raise",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c2de3ef84db44bb497b2f092f100f237.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/1871fee794c745fcb1b3b4612c382cf8.gif"
+  },
+  {
+    "name": "Standing Overhead Ball Throw",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6fd48de903044dc8a104c73e4b6af74b.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/8a49ed8be2a249b0b4acd9ad6b10a2ff.gif"
+  },
+  {
+    "name": "Standing Side Leg Raises",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abductor"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/6462fe314b1d4d1fa29d3734a33cea0f.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/7d8172cbedb44713b66e8be1b327f180.gif"
+  },
+  {
+    "name": "Step Up Jumps",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2bb38464b0124f2086527b93843c995e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/b6d5a628def4463e9f13bec12a2ff1fd.gif"
+  },
+  {
+    "name": "Step-Ups",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Barbells",
+      "Dumbbells",
+      "Kettlebell",
+      "Barbell Plates"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/62586db5833e451aaa0b7ba8846ab0f2.png",
+    "video": ""
+  },
+  {
+    "name": "Stick Warmup 1",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/62f5fdabef5e446098166c1ac8de34f6.png",
+    "video": ""
+  },
+  {
+    "name": "Stick Warmup 2",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Trapezius"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/34275a6b53dd4f3e8a9c660f3f728427.png",
+    "video": ""
+  },
+  {
+    "name": "Stick Warmup 3",
+    "body_parts": [
+      "Shoulders"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/dc1c869183a6423eb9dd5883b14186bc.png",
+    "video": ""
+  },
+  {
+    "name": "Straight-Arm Pulldown",
+    "body_parts": [
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ae12587f18804513a24bc097128ab97b.png",
+    "video": ""
+  },
+  {
+    "name": "Straight-Leg Hops",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9b3d700b643f464eb2076c95dc2a0063.png",
+    "video": ""
+  },
+  {
+    "name": "Straight-Leg Run or Bounding",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c2e28f6c8f4c4c1483850b3331564d1b.png",
+    "video": ""
+  },
+  {
+    "name": "Stretch Strap Bicycle On Your Back",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9b64cb3ef84340e3938edf7e8631cb46.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/7f97d14a2b0a41af8b4f1fcca18cd541.gif"
+  },
+  {
+    "name": "Stretch Strap Squat",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7bb84f07776f42aa95f349fd9fdea7ad.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/68082149575c43658125de705fe922d3.gif"
+  },
+  {
+    "name": "Stretch Tape Squat Pull Back",
+    "body_parts": [
+      "Core",
+      "Legs/Hips",
+      "Arms"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/008da3da5e6540b3b0fb40fae352c60a.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/87aca97fd64242d0a510897e6aed1238.gif"
+  },
+  {
+    "name": "Stretch Tape Squats Sideways",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7cc00aad46d34e56865f7462116e66a3.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/3cdcb3f8425144b49552085e01b4fbc5.gif"
+  },
+  {
+    "name": "Stretch With Lunge To Lift Knees",
+    "body_parts": [
+      "Core",
+      "Legs/Hips",
+      "Arms"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b18c87254b074a49a78ba4966fdf4dd7.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/279752aa290e47a2b58cd93d0f563afd.gif"
+  },
+  {
+    "name": "Sumo Deadlift",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/c7b265ba1d3444dd93ff96108cfff1f4.png",
+    "video": ""
+  },
+  {
+    "name": "Sumo Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Glutes"
+    ],
+    "equipment": [
+      "Barbells",
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/b180a388cae84b07be378f2f3f1dbf14.png",
+    "video": ""
+  },
+  {
+    "name": "Super Push Up",
+    "body_parts": [
+      "Back",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/154be804e0d8456b9794b4663484fea2.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/ff3e5812f13b4bd1b732f1e3bfe6d6e1.gif"
+  },
+  {
+    "name": "Supine Chest Ball Throw",
+    "body_parts": [
+      "Core",
+      "Arms"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ec939b57038e40aa89ed15c16e69298d.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/882970f6a0e54436b0ab396e2fa914e0.gif"
+  },
+  {
+    "name": "Supine Cobra",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/86ff185452f2412caeebfd500415ea3a.png",
+    "video": ""
+  },
+  {
+    "name": "Supine Knee Tucks",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/135e509fad3b486ab689fb76f79381d2.png",
+    "video": ""
+  },
+  {
+    "name": "Supine Oblique Wood Chop",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/28df995d1ac34d1385d2f12169f170cd.png",
+    "video": ""
+  },
+  {
+    "name": "Supine Overhead Ball Throw",
+    "body_parts": [
+      "Core",
+      "Shoulders",
+      "Chest",
+      "Back"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/185e98b4a26c4c19a838b36df1244b8e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/54ca76c6af5e426e8423fe6e24635924.gif"
+  },
+  {
+    "name": "Supine pull ups",
+    "body_parts": [
+      "Shoulders",
+      "Back"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/57618a50472541e4b58f419592fa52fe.png",
+    "video": ""
+  },
+  {
+    "name": "T-Bar Rows",
+    "body_parts": [
+      "Back",
+      "Arms"
+    ],
+    "muscles": [
+      "Latissimus Dorsi"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/05d8cac667d443149b4dcd1fbdba05ee.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/b6b505f3245e428baff83b7ca95f126d.gif"
+  },
+  {
+    "name": "TRX Suspended Abdominal Fallout",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a821d0aea9d045d8a0e1555d1c6ed1f3.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/6c0179b070744508966951bdf782e02f.gif"
+  },
+  {
+    "name": "TRX Suspended Biceps Curl",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/f298ca68326848cfb1438e10925ac31b.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/c3c7e1dda1af4d1f8a70c861a3662faf.gif"
+  },
+  {
+    "name": "TRX Suspended Chest Flys",
+    "body_parts": [
+      "Chest",
+      "Arms"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/2caba7f0cdb24363acef398af0b222de.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/2a8ee0ecf884450897cbde9130e3166e.gif"
+  },
+  {
+    "name": "TRX Suspended Clamp Chest",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/88af2890a4c348318d3d62cc9b1a7d43.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/757dc1969b8347b191fcba3048c4cedc.gif"
+  },
+  {
+    "name": "TRX Suspended Crunches",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7ff1fc0adfb04abca568ab1d999ffe03.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/f1b0a37d75664a7fb4e98446d044c3cd.gif"
+  },
+  {
+    "name": "TRX Suspended Leg Curl",
+    "body_parts": [
+      "Back",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/adc5a054361c44c4b9a329e856327e73.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/72fedef2c4994b9896cbc5815edf2508.gif"
+  },
+  {
+    "name": "TRX Suspended Split Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/0721fdc579304e69b60eb4f39b6f197d.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/863d6fa37ff94ab9b4262defc20c834b.gif"
+  },
+  {
+    "name": "The Elastic Band Bends The Hip And Pres",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Latissimus Dorsi",
+      "Deltoids",
+      "Glutes",
+      "Quadriceps"
+    ],
+    "equipment": [
+      "Bands"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/4f5d16ccaabd4bb1b19101f99d29fae8.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/5016e88295194e16ae9c36c643f3f26d.gif"
+  },
+  {
+    "name": "The L-sit",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/25a52bc166e24eeda41a399b3e9e5935.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/fd42429ab40a454cba19a02a20d11c4d.gif"
+  },
+  {
+    "name": "Thigh Abductor",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Abductor"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/43c4ca2223d74e0d9e087dbd6f2df3c4.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/fd8ca46191a14de090511117c604acba.gif"
+  },
+  {
+    "name": "Thigh Adductor",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Adductor"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/d30b001a4102405199dc24ae98ce757e.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/6b65331c15db43c3a3e98df9daa08a83.gif"
+  },
+  {
+    "name": "Thoracic Spine Rotation",
+    "body_parts": [
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/5ff34e6b86b54c89864f2b18fc000bbf.png",
+    "video": ""
+  },
+  {
+    "name": "Toe Touch Sweep",
+    "body_parts": [
+      "Core",
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Quadriceps",
+      "Erector Spinae"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7cbe524a9d54444e832980cbb0cdef49.png",
+    "video": ""
+  },
+  {
+    "name": "Training",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [],
+    "equipment": [],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Tricep Kickbacks",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9a458e2e4b714a049cac35513ab7143c.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/cca79212c02c450981205fea363e433f.gif"
+  },
+  {
+    "name": "Tricep Stretch",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/412b1963bb61432bbbe6cd0f2f5bcbda.png",
+    "video": ""
+  },
+  {
+    "name": "Triceps Pushdown-Machine",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/cc78a05ab6e546ccb9cadc4e029c586a.png",
+    "video": ""
+  },
+  {
+    "name": "Triceps Pushdowns",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Triceps"
+    ],
+    "equipment": [
+      "Cable/Pulley"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7e7fe8deeeec44a8bf1d2f4772bc9f59.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/4f7463ca98ee4aff8eeb48ecc72542e8.gif"
+  },
+  {
+    "name": "Trunk Rotations",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Barbell Plates",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ff65448a68c54c46ab56d43a8d8452e5.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/4509e723eef74714ae4040cd2a762766.gif"
+  },
+  {
+    "name": "Turkish Get Up",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Kettlebell",
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/7140c04ac60143afaf90d7115323e606.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/0b225e16671d4a3ebaadb6ce65979b22.gif"
+  },
+  {
+    "name": "Twist Throw",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Medicine Ball"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/fd1c3cc833924042aaa35534f88e7768.png",
+    "video": ""
+  },
+  {
+    "name": "Two Arm Kettlebell Swings",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/891c8f23228544f09429834dccba3e63.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/c5df10ffc9544e3585759136d85ce4a9.gif"
+  },
+  {
+    "name": "Unilateral Supine Buttocks Lift Hip Lif",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/57a8420fe0a04986ac571d6f30f9cb6a.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/89e6f87590bb437b9a75e03931f68f3e.gif"
+  },
+  {
+    "name": "Upright Leg Raise",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Gym Equipment"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/a029e81021f048358f312f093efceb73.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/191efc6ee6ab40a6a91baef3a91239fe.gif"
+  },
+  {
+    "name": "Upright Row",
+    "body_parts": [
+      "Shoulders",
+      "Arms"
+    ],
+    "muscles": [
+      "Deltoids"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/de31130ef0154fe286606609f0186709.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/d4b2274932eb461a8dffbf819c7fe846.gif"
+  },
+  {
+    "name": "V-Sit Hold",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/676527e6bf094bd487a4f1d41ed3f0ce.png",
+    "video": ""
+  },
+  {
+    "name": "Walking Lunges",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/176ec68876424b39b1993459ea71f421.png",
+    "video": ""
+  },
+  {
+    "name": "Wall Sit",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/45648ec9f7fe4bcdb715defefbf044aa.png",
+    "video": ""
+  },
+  {
+    "name": "Warm Up",
+    "body_parts": [
+      "Whole Body"
+    ],
+    "muscles": [],
+    "equipment": [],
+    "thumbnail": "",
+    "video": ""
+  },
+  {
+    "name": "Weighted Hanging Leg Raise",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Kettlebell"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/097e40413a604927a3a8a17b6a4ad6af.png",
+    "video": ""
+  },
+  {
+    "name": "Weighted Jump Squats",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Glutes",
+      "Posterior Thigh",
+      "Calves"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/af8e9697cfd9485f8aa795b6b52927ba.png",
+    "video": ""
+  },
+  {
+    "name": "Wide Grip Push-Up",
+    "body_parts": [
+      "Arms",
+      "Chest"
+    ],
+    "muscles": [
+      "Chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/e2729d2d8656496baf328f71a214421f.png",
+    "video": ""
+  },
+  {
+    "name": "Windshield Wiper",
+    "body_parts": [
+      "Core"
+    ],
+    "muscles": [
+      "Abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/9ae82c04823340cba831513189941b95.png",
+    "video": "https://s3eu.coros.com/source/exercise_gif/0/3413c84beb194a2ebddf452bac132b8a.gif"
+  },
+  {
+    "name": "Wrist Curls",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/4050acaa016f4c978e7b44fffea04c97.png",
+    "video": "https://s3eu.coros.com/source/exercise_img/0/ed0646405102414ca8b4928de6c34610.gif"
+  },
+  {
+    "name": "Wrist Roller",
+    "body_parts": [
+      "Arms"
+    ],
+    "muscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Ropes"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/ee2c8db3687244b3a55c479ca1dae241.png",
+    "video": ""
+  },
+  {
+    "name": "Zercher Squat",
+    "body_parts": [
+      "Legs/Hips"
+    ],
+    "muscles": [
+      "Posterior Thigh",
+      "Glutes"
+    ],
+    "equipment": [
+      "Barbells"
+    ],
+    "thumbnail": "https://s3eu.coros.com/source/exercise_img/0/cf5a4cea1dec4d1fbbd1e0daf7d53699.png",
+    "video": ""
+  }
+]
