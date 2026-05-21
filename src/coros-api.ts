@@ -501,3 +501,60 @@ export async function queryWorkouts(
   };
   return apiPost(auth, "/training/program/query", body);
 }
+
+// --- Activities (completed workouts recorded by the watch) ---
+
+export interface ActivitySummary {
+  labelId: string;
+  date: number;
+  name: string;
+  sportType: number;
+  mode: number;
+  subMode: number;
+  startTime: number;
+  endTime: number;
+  totalTime: number;
+  workoutTime: number;
+  distance: number;
+  calorie: number;
+  avgHr: number;
+  trainingLoad: number;
+  device: string;
+}
+
+export interface ActivityQueryOptions {
+  pageNumber?: number;
+  size?: number;
+  startDate?: number;
+  endDate?: number;
+}
+
+export async function queryActivities(
+  auth: AuthData,
+  options: ActivityQueryOptions = {}
+): Promise<{ count: number; dataList: ActivitySummary[] }> {
+  // startDate/endDate are passed through but the COROS endpoint appears to
+  // ignore them, so we also filter client-side after the response.
+  const params: Record<string, string | number> = {
+    pageNumber: options.pageNumber ?? 1,
+    size: options.size ?? 20,
+  };
+  if (options.startDate !== undefined) params.startDate = options.startDate;
+  if (options.endDate !== undefined) params.endDate = options.endDate;
+  const result = (await apiGet(auth, "/activity/query", params)) as {
+    data: { count: number; dataList?: ActivitySummary[] };
+  };
+  let dataList = result.data.dataList ?? [];
+  if (options.startDate !== undefined) {
+    const s = options.startDate;
+    dataList = dataList.filter((a) => a.date >= s);
+  }
+  if (options.endDate !== undefined) {
+    const e = options.endDate;
+    dataList = dataList.filter((a) => a.date <= e);
+  }
+  return {
+    count: result.data.count,
+    dataList,
+  };
+}
