@@ -501,3 +501,147 @@ export async function queryWorkouts(
   };
   return apiPost(auth, "/training/program/query", body);
 }
+
+// --- Activities (completed workouts recorded by the watch) ---
+
+export interface ActivitySummary {
+  labelId: string;
+  date: number;
+  name: string;
+  sportType: number;
+  mode: number;
+  subMode: number;
+  startTime: number;
+  endTime: number;
+  totalTime: number;
+  workoutTime: number;
+  distance: number;
+  calorie: number;
+  avgHr: number;
+  trainingLoad: number;
+  device: string;
+}
+
+export interface ActivityQueryOptions {
+  pageNumber?: number;
+  size?: number;
+  startDate?: number;
+  endDate?: number;
+}
+
+/** Per-set/exercise item inside a strength activity's lapList. */
+export interface ActivityLapItem {
+  exerciseIndex: number;
+  exerciseNameKey: string; // e.g. "T1065" or "S3618" (rest)
+  exerciseType: number;
+  reps: number;
+  sets: number;
+  intensityType: number;
+  // intensityValue: workout-template default weight in grams. NOT the actual
+  // weight lifted on a given set — for that, use `weight` on per-set items.
+  intensityValue: number;
+  // Per-set: actual weight lifted in grams. On rollup items (mode 16/17),
+  // this is total volume (Σ kg×reps × 1000), not per-set.
+  weight: number;
+  // mode 14 = working set, 15 = rest between sets, 16 = exercise rollup,
+  // 17 = rest-period rollup. lapType 1 also marks rollups.
+  mode: number;
+  lapType: number;
+  actualValue: number; // varies by exerciseType: reps for rep sets, ms for rest/duration
+  totalLength: number; // duration in ms for time-based items
+  time: number;
+  avgHr: number;
+  maxHr: number;
+  minHr: number;
+  calories: number; // kcal × 1000 (matches list endpoint convention)
+  startTimestamp: number;
+  endTimestamp: number;
+  targetSets: number;
+  targetType: number;
+  targetValue: number;
+}
+
+export interface ActivityDetail {
+  summary: Record<string, unknown>;
+  lapList: Array<{
+    type: number;
+    lapDistance: number;
+    lapItemList: ActivityLapItem[];
+  }>;
+  muscleList: Array<{
+    muscleId: number;
+    muscleKey: string;
+    sets: number;
+    reps: number;
+    duration: number;
+    level: number;
+    muscleType: number;
+  }>;
+  [k: string]: unknown;
+}
+
+/**
+ * Fetch the full details of a single recorded activity, including per-exercise
+ * sets, reps, weights and rest periods. The COROS web app calls this with
+ * POST + empty body and the parameters in the query string.
+ */
+export async function queryActivityDetail(
+  auth: AuthData,
+  labelId: string,
+  sportType: number,
+  screenW = 565,
+  screenH = 982
+): Promise<ActivityDetail> {
+  const apiUrl = REGION_URLS[auth.region];
+  const url = new URL(`${apiUrl}/activity/detail/query`);
+  url.searchParams.set("screenW", String(screenW));
+  url.searchParams.set("screenH", String(screenH));
+  url.searchParams.set("labelId", labelId);
+  url.searchParams.set("sportType", String(sportType));
+  const res = await fetch(url.toString(), {
+    method: "POST",
+    headers: {
+      accesstoken: auth.accessToken,
+      yfheader: JSON.stringify({ userId: auth.userId }),
+      "Content-Type": "application/x-www-form-urlencoded",
+      "Content-Length": "0",
+    },
+  });
+  const data = await res.json();
+  if (data.result !== "0000") {
+    throw new Error(
+      `COROS API error (/activity/detail/query): ${data.message || data.result}`
+    );
+  }
+  return data.data as ActivityDetail;
+}
+
+export async function queryActivities(
+  auth: AuthData,
+  options: ActivityQueryOptions = {}
+): Promise<{ count: number; dataList: ActivitySummary[] }> {
+  // startDate/endDate are passed through but the COROS endpoint appears to
+  // ignore them, so we also filter client-side after the response.
+  const params: Record<string, string | number> = {
+    pageNumber: options.pageNumber ?? 1,
+    size: options.size ?? 20,
+  };
+  if (options.startDate !== undefined) params.startDate = options.startDate;
+  if (options.endDate !== undefined) params.endDate = options.endDate;
+  const result = (await apiGet(auth, "/activity/query", params)) as {
+    data: { count: number; dataList?: ActivitySummary[] };
+  };
+  let dataList = result.data.dataList ?? [];
+  if (options.startDate !== undefined) {
+    const s = options.startDate;
+    dataList = dataList.filter((a) => a.date >= s);
+  }
+  if (options.endDate !== undefined) {
+    const e = options.endDate;
+    dataList = dataList.filter((a) => a.date <= e);
+  }
+  return {
+    count: result.data.count,
+    dataList,
+  };
+}
