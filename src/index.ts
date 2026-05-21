@@ -577,9 +577,16 @@ server.tool(
 
 // --- Tool: get_activity_detail ---
 // Group consecutive lapItems sharing the same exerciseNameKey (and skip rest items).
+//
+// Each exercise group contains:
+//   - Per-set entries (mode 14) with the actual weight in `weight` (grams)
+//     — these may differ across sets (warmups, ramping, etc.).
+//   - Optional rest entries (mode 15) interleaved with sets.
+//   - A rollup entry (mode 16, lapType 1) with `sets`, `reps` totals.
+//     Its `weight` field is total volume (Σ kg×reps × 1000), not per-set.
+//     Its `intensityValue` is the workout-template default, NOT the lifted weight.
+//   - A rest-rollup entry (mode 17, exerciseNameKey starting "S").
 function summarizeStrengthActivity(lapItems: ActivityLapItem[]): string {
-  // Group by exerciseIndex (each rep + rest pair shares the index, the final
-  // entry per index has the rolled-up totals: sets, total reps, weight).
   const byIndex = new Map<number, ActivityLapItem[]>();
   for (const item of lapItems) {
     if (!byIndex.has(item.exerciseIndex)) byIndex.set(item.exerciseIndex, []);
@@ -590,27 +597,37 @@ function summarizeStrengthActivity(lapItems: ActivityLapItem[]): string {
   const sortedIndexes = [...byIndex.keys()].sort((a, b) => a - b);
   for (const idx of sortedIndexes) {
     const group = byIndex.get(idx)!;
-    // The final non-rest item in the group has the rolled-up totals; rest
-    // items use exerciseNameKey starting with 'S' (e.g. S3618).
-    const exerciseItems = group.filter(
-      (it) => !it.exerciseNameKey.startsWith("S")
-    );
-    const summary = exerciseItems[exerciseItems.length - 1];
-    if (!summary) continue;
-    const setCount = summary.sets || exerciseItems.length;
-    const repCount = summary.reps;
-    const weightG = summary.intensityValue;
-    const weightStr = weightG > 0 ? ` @ ${(weightG / 1000).toFixed(1)}kg` : "";
+    const nonRest = group.filter((it) => !it.exerciseNameKey.startsWith("S"));
+    const rollup = nonRest.find((it) => it.mode === 16) ?? nonRest[nonRest.length - 1];
+    if (!rollup) continue;
+
+    const workingSets = nonRest.filter((it) => it.mode === 14);
+    const setCount = rollup.sets || workingSets.length;
+    const repCount = rollup.reps;
     const repsPerSet = setCount > 0 && repCount > 0
       ? Math.round(repCount / setCount)
       : repCount;
-    const catalog = findByCodeName(summary.exerciseNameKey);
-    const name = catalog?.name ?? summary.exerciseNameKey;
+
+    // Build weight string from per-set `weight` (grams). Group consecutive
+    // identical values: "60kg×3" or "40/80/100kg" when sets ramp.
+    const weightsKg = workingSets
+      .map((s) => s.weight / 1000)
+      .filter((w) => w > 0);
+    let weightStr = "";
+    if (weightsKg.length > 0) {
+      const allSame = weightsKg.every((w) => w === weightsKg[0]);
+      weightStr = allSame
+        ? ` @ ${weightsKg[0]}kg`
+        : ` @ ${weightsKg.map((w) => `${w}kg`).join("/")}`;
+    }
+
+    const catalog = findByCodeName(rollup.exerciseNameKey);
+    const name = catalog?.name ?? rollup.exerciseNameKey;
     const detail = setCount > 0 && repCount > 0
       ? `${setCount}×${repsPerSet} (${repCount} reps total)`
       : repCount > 0
         ? `${repCount} reps`
-        : `${(summary.totalLength / 1000).toFixed(0)}s`;
+        : `${(rollup.totalLength / 1000).toFixed(0)}s`;
     lines.push(`  ${idx}. ${name} — ${detail}${weightStr}`);
   }
   return lines.join("\n");
@@ -660,8 +677,10 @@ server.tool(
       const summary = (detail.summary ?? {}) as Record<string, number>;
       const totalSets = summary.sets ?? 0;
       const totalReps = summary.totalReps ?? 0;
-      const duration = summary.totalTime ?? 0;
-      const calorie = summary.calorie ?? 0;
+      // detail endpoint reports totalTime in centiseconds (1/100s),
+      // unlike the list endpoint which uses seconds.
+      const durationSec = Math.round((summary.totalTime ?? 0) / 100);
+      const calories = summary.calories ?? 0; // kcal × 1000
       const avgHr = summary.avgHr ?? 0;
       const trainingLoad = summary.trainingLoad ?? 0;
 
@@ -669,7 +688,7 @@ server.tool(
 
       const header = [
         `Activity ${labelId}:`,
-        `  Duration: ${formatDuration(duration)}, ${Math.round(calorie / 1000)} kcal, avgHR ${avgHr}, TL ${trainingLoad}`,
+        `  Duration: ${formatDuration(durationSec)}, ${Math.round(calories / 1000)} kcal, avgHR ${avgHr}, TL ${trainingLoad}`,
         `  Total: ${totalSets} sets, ${totalReps} reps`,
         ``,
         `Exercises:`,

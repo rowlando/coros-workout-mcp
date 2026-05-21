@@ -537,7 +537,16 @@ export interface ActivityLapItem {
   reps: number;
   sets: number;
   intensityType: number;
-  intensityValue: number; // weight in grams when intensityType=1
+  // intensityValue: workout-template default weight in grams. NOT the actual
+  // weight lifted on a given set — for that, use `weight` on per-set items.
+  intensityValue: number;
+  // Per-set: actual weight lifted in grams. On rollup items (mode 16/17),
+  // this is total volume (Σ kg×reps × 1000), not per-set.
+  weight: number;
+  // mode 14 = working set, 15 = rest between sets, 16 = exercise rollup,
+  // 17 = rest-period rollup. lapType 1 also marks rollups.
+  mode: number;
+  lapType: number;
   actualValue: number; // varies by exerciseType: reps for rep sets, ms for rest/duration
   totalLength: number; // duration in ms for time-based items
   time: number;
