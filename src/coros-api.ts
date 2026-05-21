@@ -529,6 +529,84 @@ export interface ActivityQueryOptions {
   endDate?: number;
 }
 
+/** Per-set/exercise item inside a strength activity's lapList. */
+export interface ActivityLapItem {
+  exerciseIndex: number;
+  exerciseNameKey: string; // e.g. "T1065" or "S3618" (rest)
+  exerciseType: number;
+  reps: number;
+  sets: number;
+  intensityType: number;
+  intensityValue: number; // weight in grams when intensityType=1
+  actualValue: number; // varies by exerciseType: reps for rep sets, ms for rest/duration
+  totalLength: number; // duration in ms for time-based items
+  time: number;
+  avgHr: number;
+  maxHr: number;
+  minHr: number;
+  calories: number; // kcal × 1000 (matches list endpoint convention)
+  startTimestamp: number;
+  endTimestamp: number;
+  targetSets: number;
+  targetType: number;
+  targetValue: number;
+}
+
+export interface ActivityDetail {
+  summary: Record<string, unknown>;
+  lapList: Array<{
+    type: number;
+    lapDistance: number;
+    lapItemList: ActivityLapItem[];
+  }>;
+  muscleList: Array<{
+    muscleId: number;
+    muscleKey: string;
+    sets: number;
+    reps: number;
+    duration: number;
+    level: number;
+    muscleType: number;
+  }>;
+  [k: string]: unknown;
+}
+
+/**
+ * Fetch the full details of a single recorded activity, including per-exercise
+ * sets, reps, weights and rest periods. The COROS web app calls this with
+ * POST + empty body and the parameters in the query string.
+ */
+export async function queryActivityDetail(
+  auth: AuthData,
+  labelId: string,
+  sportType: number,
+  screenW = 565,
+  screenH = 982
+): Promise<ActivityDetail> {
+  const apiUrl = REGION_URLS[auth.region];
+  const url = new URL(`${apiUrl}/activity/detail/query`);
+  url.searchParams.set("screenW", String(screenW));
+  url.searchParams.set("screenH", String(screenH));
+  url.searchParams.set("labelId", labelId);
+  url.searchParams.set("sportType", String(sportType));
+  const res = await fetch(url.toString(), {
+    method: "POST",
+    headers: {
+      accesstoken: auth.accessToken,
+      yfheader: JSON.stringify({ userId: auth.userId }),
+      "Content-Type": "application/x-www-form-urlencoded",
+      "Content-Length": "0",
+    },
+  });
+  const data = await res.json();
+  if (data.result !== "0000") {
+    throw new Error(
+      `COROS API error (/activity/detail/query): ${data.message || data.result}`
+    );
+  }
+  return data.data as ActivityDetail;
+}
+
 export async function queryActivities(
   auth: AuthData,
   options: ActivityQueryOptions = {}

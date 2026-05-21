@@ -12,13 +12,16 @@ import {
   addWorkout,
   queryWorkouts,
   queryActivities,
+  queryActivityDetail,
   queryExerciseCatalog,
   fetchI18nStrings,
   buildCatalogFromRaw,
 } from "./coros-api.js";
+import type { ActivityLapItem } from "./coros-api.js";
 import {
   searchExercises,
   findByName,
+  findByCodeName,
   getAllExercises,
   reloadCatalog,
   getCatalogPath,
@@ -62,7 +65,7 @@ server.tool(
         content: [
           {
             type: "text" as const,
-            text: `Authenticated successfully. User ID: ${auth.userId}, Region: ${auth.region}. Token stored at ~/.config/coros-workout-mcp/auth.json`,
+            text: `Authenticated successfully. User ID: ${auth.userId}, Region: ${auth.region}. Token stored at ~/.coros-workout-mcp/auth.json`,
           },
         ],
       };
@@ -564,6 +567,128 @@ server.tool(
           {
             type: "text" as const,
             text: `Failed to list activities: ${error instanceof Error ? error.message : String(error)}`,
+          },
+        ],
+        isError: true,
+      };
+    }
+  }
+);
+
+// --- Tool: get_activity_detail ---
+// Group consecutive lapItems sharing the same exerciseNameKey (and skip rest items).
+function summarizeStrengthActivity(lapItems: ActivityLapItem[]): string {
+  // Group by exerciseIndex (each rep + rest pair shares the index, the final
+  // entry per index has the rolled-up totals: sets, total reps, weight).
+  const byIndex = new Map<number, ActivityLapItem[]>();
+  for (const item of lapItems) {
+    if (!byIndex.has(item.exerciseIndex)) byIndex.set(item.exerciseIndex, []);
+    byIndex.get(item.exerciseIndex)!.push(item);
+  }
+
+  const lines: string[] = [];
+  const sortedIndexes = [...byIndex.keys()].sort((a, b) => a - b);
+  for (const idx of sortedIndexes) {
+    const group = byIndex.get(idx)!;
+    // The final non-rest item in the group has the rolled-up totals; rest
+    // items use exerciseNameKey starting with 'S' (e.g. S3618).
+    const exerciseItems = group.filter(
+      (it) => !it.exerciseNameKey.startsWith("S")
+    );
+    const summary = exerciseItems[exerciseItems.length - 1];
+    if (!summary) continue;
+    const setCount = summary.sets || exerciseItems.length;
+    const repCount = summary.reps;
+    const weightG = summary.intensityValue;
+    const weightStr = weightG > 0 ? ` @ ${(weightG / 1000).toFixed(1)}kg` : "";
+    const repsPerSet = setCount > 0 && repCount > 0
+      ? Math.round(repCount / setCount)
+      : repCount;
+    const catalog = findByCodeName(summary.exerciseNameKey);
+    const name = catalog?.name ?? summary.exerciseNameKey;
+    const detail = setCount > 0 && repCount > 0
+      ? `${setCount}×${repsPerSet} (${repCount} reps total)`
+      : repCount > 0
+        ? `${repCount} reps`
+        : `${(summary.totalLength / 1000).toFixed(0)}s`;
+    lines.push(`  ${idx}. ${name} — ${detail}${weightStr}`);
+  }
+  return lines.join("\n");
+}
+
+server.tool(
+  "get_activity_detail",
+  "Get per-exercise breakdown for a recorded strength activity (sets, reps, weight). Pass the labelId from list_activities; sportType also from list_activities (typically 402 for Strength).",
+  {
+    labelId: z
+      .string()
+      .describe("Activity labelId from list_activities (e.g. '477574221250199560')"),
+    sportType: z
+      .number()
+      .int()
+      .default(402)
+      .describe("Sport type from list_activities (402 = Strength)"),
+  },
+  async ({ labelId, sportType }) => {
+    try {
+      const auth = await getValidAuth();
+      if (!auth) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: "Not authenticated. Use authenticate_coros first.",
+            },
+          ],
+          isError: true,
+        };
+      }
+
+      const detail = await queryActivityDetail(auth, labelId, sportType);
+      const lapItems = detail.lapList?.[0]?.lapItemList ?? [];
+      if (lapItems.length === 0) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: "No exercise data found for this activity.",
+            },
+          ],
+        };
+      }
+
+      const summary = (detail.summary ?? {}) as Record<string, number>;
+      const totalSets = summary.sets ?? 0;
+      const totalReps = summary.totalReps ?? 0;
+      const duration = summary.totalTime ?? 0;
+      const calorie = summary.calorie ?? 0;
+      const avgHr = summary.avgHr ?? 0;
+      const trainingLoad = summary.trainingLoad ?? 0;
+
+      const exerciseSummary = summarizeStrengthActivity(lapItems);
+
+      const header = [
+        `Activity ${labelId}:`,
+        `  Duration: ${formatDuration(duration)}, ${Math.round(calorie / 1000)} kcal, avgHR ${avgHr}, TL ${trainingLoad}`,
+        `  Total: ${totalSets} sets, ${totalReps} reps`,
+        ``,
+        `Exercises:`,
+      ].join("\n");
+
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: header + "\n" + exerciseSummary,
+          },
+        ],
+      };
+    } catch (error) {
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: `Failed to get activity detail: ${error instanceof Error ? error.message : String(error)}`,
           },
         ],
         isError: true,
