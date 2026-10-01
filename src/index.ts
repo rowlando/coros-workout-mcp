@@ -17,12 +17,14 @@ import {
   fetchI18nStrings,
   buildCatalogFromRaw,
 } from "./coros-api.js";
-import type { ActivityLapItem } from "./coros-api.js";
-import { formatActivity, formatDuration } from "./activity-format.js";
+import {
+  formatActivity,
+  formatDuration,
+  formatStrengthExercises,
+} from "./activity-format.js";
 import {
   searchExercises,
   findByName,
-  findByCodeName,
   getAllExercises,
   reloadCatalog,
   getCatalogPath,
@@ -526,66 +528,9 @@ server.tool(
 );
 
 // --- Tool: get_activity_detail ---
-// Group consecutive lapItems sharing the same exerciseNameKey (and skip rest items).
-//
-// Each exercise group contains:
-//   - Per-set entries (mode 14) with the actual weight in `weight` (grams)
-//     — these may differ across sets (warmups, ramping, etc.).
-//   - Optional rest entries (mode 15) interleaved with sets.
-//   - A rollup entry (mode 16, lapType 1) with `sets`, `reps` totals.
-//     Its `weight` field is total volume (Σ kg×reps × 1000), not per-set.
-//     Its `intensityValue` is the workout-template default, NOT the lifted weight.
-//   - A rest-rollup entry (mode 17, exerciseNameKey starting "S").
-function summarizeStrengthActivity(lapItems: ActivityLapItem[]): string {
-  const byIndex = new Map<number, ActivityLapItem[]>();
-  for (const item of lapItems) {
-    if (!byIndex.has(item.exerciseIndex)) byIndex.set(item.exerciseIndex, []);
-    byIndex.get(item.exerciseIndex)!.push(item);
-  }
-
-  const lines: string[] = [];
-  const sortedIndexes = [...byIndex.keys()].sort((a, b) => a - b);
-  for (const idx of sortedIndexes) {
-    const group = byIndex.get(idx)!;
-    const nonRest = group.filter((it) => !it.exerciseNameKey.startsWith("S"));
-    const rollup = nonRest.find((it) => it.mode === 16) ?? nonRest[nonRest.length - 1];
-    if (!rollup) continue;
-
-    const workingSets = nonRest.filter((it) => it.mode === 14);
-    const setCount = rollup.sets || workingSets.length;
-    const repCount = rollup.reps;
-    const repsPerSet = setCount > 0 && repCount > 0
-      ? Math.round(repCount / setCount)
-      : repCount;
-
-    // Build weight string from per-set `weight` (grams). Group consecutive
-    // identical values: "60kg×3" or "40/80/100kg" when sets ramp.
-    const weightsKg = workingSets
-      .map((s) => s.weight / 1000)
-      .filter((w) => w > 0);
-    let weightStr = "";
-    if (weightsKg.length > 0) {
-      const allSame = weightsKg.every((w) => w === weightsKg[0]);
-      weightStr = allSame
-        ? ` @ ${weightsKg[0]}kg`
-        : ` @ ${weightsKg.map((w) => `${w}kg`).join("/")}`;
-    }
-
-    const catalog = findByCodeName(rollup.exerciseNameKey);
-    const name = catalog?.name ?? rollup.exerciseNameKey;
-    const detail = setCount > 0 && repCount > 0
-      ? `${setCount}×${repsPerSet} (${repCount} reps total)`
-      : repCount > 0
-        ? `${repCount} reps`
-        : `${(rollup.totalLength / 1000).toFixed(0)}s`;
-    lines.push(`  ${idx}. ${name} — ${detail}${weightStr}`);
-  }
-  return lines.join("\n");
-}
-
 server.tool(
   "get_activity_detail",
-  "Get per-exercise breakdown for a recorded strength activity (sets, reps, weight). Pass the labelId from list_activities; sportType also from list_activities (typically 402 for Strength).",
+  "Get the set-by-set breakdown of a recorded strength activity (reps, weight and time for each set, and the rest after it). Pass the labelId from list_activities; sportType also from list_activities (typically 402 for Strength).",
   {
     labelId: z
       .string()
@@ -627,6 +572,7 @@ server.tool(
       const summary = (detail.summary ?? {}) as Record<string, number>;
       const totalSets = summary.sets ?? 0;
       const totalReps = summary.totalReps ?? 0;
+      const totalWeight = summary.totalWeight ?? 0; // grams
       // detail endpoint reports totalTime in centiseconds (1/100s),
       // unlike the list endpoint which uses seconds.
       const durationSec = Math.round((summary.totalTime ?? 0) / 100);
@@ -634,12 +580,12 @@ server.tool(
       const avgHr = summary.avgHr ?? 0;
       const trainingLoad = summary.trainingLoad ?? 0;
 
-      const exerciseSummary = summarizeStrengthActivity(lapItems);
+      const exerciseSummary = formatStrengthExercises(lapItems);
 
       const header = [
         `Activity ${labelId}:`,
         `  Duration: ${formatDuration(durationSec)}, ${Math.round(calories / 1000)} kcal, avgHR ${avgHr}, TL ${trainingLoad}`,
-        `  Total: ${totalSets} sets, ${totalReps} reps`,
+        `  Total: ${totalSets} sets, ${totalReps} reps, ${totalWeight / 1000}kg volume`,
         ``,
         `Exercises:`,
       ].join("\n");

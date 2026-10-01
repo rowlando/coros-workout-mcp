@@ -560,9 +560,9 @@ export interface ActivityLapItem {
   // 17 = rest-period rollup. lapType 1 also marks rollups.
   mode: number;
   lapType: number;
-  actualValue: number; // varies by exerciseType: reps for rep sets, ms for rest/duration
-  totalLength: number; // duration in ms for time-based items
-  time: number;
+  actualValue: number; // rest rows (mode 15/17): rest in centiseconds; totals: reps
+  totalLength: number; // running elapsed time in centiseconds, not a duration
+  time: number; // duration of this row in centiseconds
   avgHr: number;
   maxHr: number;
   minHr: number;
