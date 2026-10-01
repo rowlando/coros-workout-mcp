@@ -12,6 +12,8 @@ import {
   addWorkout,
   queryWorkouts,
   queryActivities,
+  MAX_SCAN_PAGES,
+  SCAN_PAGE_SIZE,
   queryActivityDetail,
   queryExerciseCatalog,
   fetchI18nStrings,
@@ -522,17 +524,24 @@ server.tool(
         };
       }
 
-      const { count, dataList } = await queryActivities(auth, {
+      const { count, dataList, truncated } = await queryActivities(auth, {
         pageNumber,
         size: limit,
         startDate,
         endDate,
       });
 
+      const truncatedNote = truncated
+        ? `\n\nNote: only the ${MAX_SCAN_PAGES * SCAN_PAGE_SIZE} most recent activities were searched; older matches may exist.`
+        : "";
+
       if (dataList.length === 0) {
         return {
           content: [
-            { type: "text" as const, text: "No activities found." },
+            {
+              type: "text" as const,
+              text: "No activities found." + truncatedNote,
+            },
           ],
         };
       }
@@ -559,7 +568,9 @@ server.tool(
 
       const header = `Found ${dataList.length} activit${dataList.length === 1 ? "y" : "ies"} (total available: ${count}):\n\n`;
       return {
-        content: [{ type: "text" as const, text: header + formatted }],
+        content: [
+          { type: "text" as const, text: header + formatted + truncatedNote },
+        ],
       };
     } catch (error) {
       return {
