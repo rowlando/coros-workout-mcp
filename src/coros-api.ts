@@ -92,47 +92,60 @@ export async function getValidAuth(): Promise<AuthData | null> {
 
 // --- API helpers ---
 
-function apiHeaders(auth: AuthData): Record<string, string> {
-  return {
-    "Content-Type": "application/json",
-    accesstoken: auth.accessToken,
-    yfheader: JSON.stringify({ userId: auth.userId }),
-  };
+interface ApiRequestOptions {
+  method: "GET" | "POST";
+  params?: Record<string, string | number>;
+  /** JSON body. Omit for POSTs that carry everything in the query string. */
+  body?: unknown;
 }
 
-async function apiPost(auth: AuthData, path: string, body: unknown): Promise<unknown> {
-  const apiUrl = REGION_URLS[auth.region];
-  const res = await fetch(`${apiUrl}${path}`, {
-    method: "POST",
-    headers: apiHeaders(auth),
-    body: JSON.stringify(body),
-  });
-  const data = await res.json();
-  if (data.result !== "0000") {
-    throw new Error(`COROS API error (${path}): ${data.message || data.result}`);
-  }
-  return data;
-}
-
-async function apiGet(
+async function apiRequest(
   auth: AuthData,
   path: string,
-  params: Record<string, string | number> = {}
-): Promise<unknown> {
-  const apiUrl = REGION_URLS[auth.region];
-  const url = new URL(`${apiUrl}${path}`);
+  { method, params = {}, body }: ApiRequestOptions
+): Promise<{ data: unknown }> {
+  const url = new URL(`${REGION_URLS[auth.region]}${path}`);
   for (const [key, value] of Object.entries(params)) {
     url.searchParams.set(key, String(value));
   }
   const res = await fetch(url.toString(), {
-    method: "GET",
-    headers: apiHeaders(auth),
+    method,
+    headers: {
+      // The web app sends bodyless POSTs as an empty form submission.
+      "Content-Type":
+        body === undefined && method === "POST"
+          ? "application/x-www-form-urlencoded"
+          : "application/json",
+      accesstoken: auth.accessToken,
+      yfheader: JSON.stringify({ userId: auth.userId }),
+    },
+    body: body === undefined ? undefined : JSON.stringify(body),
   });
-  const data = await res.json();
+  if (!res.ok) {
+    throw new Error(`COROS API error (${path}): HTTP ${res.status} ${res.statusText}`);
+  }
+  let data: { result?: string; message?: string; data?: unknown };
+  try {
+    data = await res.json();
+  } catch {
+    throw new Error(`COROS API error (${path}): response was not JSON`);
+  }
   if (data.result !== "0000") {
     throw new Error(`COROS API error (${path}): ${data.message || data.result}`);
   }
-  return data;
+  return data as { data: unknown };
+}
+
+function apiPost(auth: AuthData, path: string, body: unknown) {
+  return apiRequest(auth, path, { method: "POST", body });
+}
+
+function apiGet(
+  auth: AuthData,
+  path: string,
+  params: Record<string, string | number> = {}
+) {
+  return apiRequest(auth, path, { method: "GET", params });
 }
 
 /** Fetch the full exercise catalog from COROS API */
@@ -592,28 +605,11 @@ export async function queryActivityDetail(
   screenW = 565,
   screenH = 982
 ): Promise<ActivityDetail> {
-  const apiUrl = REGION_URLS[auth.region];
-  const url = new URL(`${apiUrl}/activity/detail/query`);
-  url.searchParams.set("screenW", String(screenW));
-  url.searchParams.set("screenH", String(screenH));
-  url.searchParams.set("labelId", labelId);
-  url.searchParams.set("sportType", String(sportType));
-  const res = await fetch(url.toString(), {
+  const result = await apiRequest(auth, "/activity/detail/query", {
     method: "POST",
-    headers: {
-      accesstoken: auth.accessToken,
-      yfheader: JSON.stringify({ userId: auth.userId }),
-      "Content-Type": "application/x-www-form-urlencoded",
-      "Content-Length": "0",
-    },
+    params: { screenW, screenH, labelId, sportType },
   });
-  const data = await res.json();
-  if (data.result !== "0000") {
-    throw new Error(
-      `COROS API error (/activity/detail/query): ${data.message || data.result}`
-    );
-  }
-  return data.data as ActivityDetail;
+  return result.data as ActivityDetail;
 }
 
 export interface ActivityPage {
