@@ -20,6 +20,7 @@ import {
   buildCatalogFromRaw,
 } from "./coros-api.js";
 import type { ActivityLapItem } from "./coros-api.js";
+import { formatActivity, formatDuration } from "./activity-format.js";
 import {
   searchExercises,
   findByName,
@@ -448,42 +449,9 @@ server.tool(
 );
 
 // --- Tool: list_activities ---
-const SPORT_TYPE_NAMES: Record<number, string> = {
-  100: "Run",
-  101: "Indoor Run",
-  102: "Trail Run",
-  200: "Cycling",
-  201: "Indoor Cycling",
-  300: "Pool Swim",
-  301: "Open Water Swim",
-  400: "Multi-Sport",
-  401: "Triathlon",
-  402: "Strength",
-  403: "Cardio",
-  404: "GPS Cardio",
-  500: "Hike",
-  600: "Ski",
-  700: "Indoor Walk",
-  701: "Indoor Rower",
-};
-
-function formatActivityDate(yyyymmdd: number): string {
-  const s = String(yyyymmdd);
-  return `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`;
-}
-
-function formatDuration(seconds: number): string {
-  const h = Math.floor(seconds / 3600);
-  const m = Math.floor((seconds % 3600) / 60);
-  const s = seconds % 60;
-  if (h > 0) return `${h}h ${m}m`;
-  if (m > 0) return `${m}m ${s}s`;
-  return `${s}s`;
-}
-
 server.tool(
   "list_activities",
-  "List actual completed activities recorded by the COROS watch (runs, swims, strength sessions, etc.). Use startDate/endDate (YYYYMMDD integers) to filter by date range.",
+  "List actual completed activities recorded by the COROS watch (runs, swims, strength sessions, etc.). Use startDate/endDate (YYYYMMDD integers) to filter by date range. Each entry includes the labelId and sportType needed by get_activity_detail.",
   {
     startDate: z
       .number()
@@ -546,25 +514,7 @@ server.tool(
         };
       }
 
-      const formatted = dataList
-        .map((a) => {
-          const sport =
-            SPORT_TYPE_NAMES[a.sportType] ?? `sport ${a.sportType}`;
-          const parts = [
-            `- **${a.name}** (${formatActivityDate(a.date)}, ${sport})`,
-            `  ${formatDuration(a.totalTime)}`,
-          ];
-          if (a.distance > 0) {
-            parts[1] += `, ${(a.distance / 1000).toFixed(2)} km`;
-          }
-          if (a.calorie > 0) {
-            parts[1] += `, ${Math.round(a.calorie / 1000)} kcal`;
-          }
-          if (a.avgHr > 0) parts[1] += `, avgHR ${a.avgHr}`;
-          if (a.trainingLoad > 0) parts[1] += `, TL ${a.trainingLoad}`;
-          return parts.join("\n");
-        })
-        .join("\n");
+      const formatted = dataList.map(formatActivity).join("\n");
 
       const header = `Found ${dataList.length} activit${dataList.length === 1 ? "y" : "ies"} (total available: ${count}):\n\n`;
       return {
