@@ -92,47 +92,60 @@ export async function getValidAuth(): Promise<AuthData | null> {
 
 // --- API helpers ---
 
-function apiHeaders(auth: AuthData): Record<string, string> {
-  return {
-    "Content-Type": "application/json",
-    accesstoken: auth.accessToken,
-    yfheader: JSON.stringify({ userId: auth.userId }),
-  };
+interface ApiRequestOptions {
+  method: "GET" | "POST";
+  params?: Record<string, string | number>;
+  /** JSON body. Omit for POSTs that carry everything in the query string. */
+  body?: unknown;
 }
 
-async function apiPost(auth: AuthData, path: string, body: unknown): Promise<unknown> {
-  const apiUrl = REGION_URLS[auth.region];
-  const res = await fetch(`${apiUrl}${path}`, {
-    method: "POST",
-    headers: apiHeaders(auth),
-    body: JSON.stringify(body),
-  });
-  const data = await res.json();
-  if (data.result !== "0000") {
-    throw new Error(`COROS API error (${path}): ${data.message || data.result}`);
-  }
-  return data;
-}
-
-async function apiGet(
+async function apiRequest(
   auth: AuthData,
   path: string,
-  params: Record<string, string | number> = {}
-): Promise<unknown> {
-  const apiUrl = REGION_URLS[auth.region];
-  const url = new URL(`${apiUrl}${path}`);
+  { method, params = {}, body }: ApiRequestOptions
+): Promise<{ data: unknown }> {
+  const url = new URL(`${REGION_URLS[auth.region]}${path}`);
   for (const [key, value] of Object.entries(params)) {
     url.searchParams.set(key, String(value));
   }
   const res = await fetch(url.toString(), {
-    method: "GET",
-    headers: apiHeaders(auth),
+    method,
+    headers: {
+      // The web app sends bodyless POSTs as an empty form submission.
+      "Content-Type":
+        body === undefined && method === "POST"
+          ? "application/x-www-form-urlencoded"
+          : "application/json",
+      accesstoken: auth.accessToken,
+      yfheader: JSON.stringify({ userId: auth.userId }),
+    },
+    body: body === undefined ? undefined : JSON.stringify(body),
   });
-  const data = await res.json();
+  if (!res.ok) {
+    throw new Error(`COROS API error (${path}): HTTP ${res.status} ${res.statusText}`);
+  }
+  let data: { result?: string; message?: string; data?: unknown };
+  try {
+    data = await res.json();
+  } catch {
+    throw new Error(`COROS API error (${path}): response was not JSON`);
+  }
   if (data.result !== "0000") {
     throw new Error(`COROS API error (${path}): ${data.message || data.result}`);
   }
-  return data;
+  return data as { data: unknown };
+}
+
+function apiPost(auth: AuthData, path: string, body: unknown) {
+  return apiRequest(auth, path, { method: "POST", body });
+}
+
+function apiGet(
+  auth: AuthData,
+  path: string,
+  params: Record<string, string | number> = {}
+) {
+  return apiRequest(auth, path, { method: "GET", params });
 }
 
 /** Fetch the full exercise catalog from COROS API */
@@ -500,4 +513,127 @@ export async function queryWorkouts(
     sportType: options.sportType ?? 0,
   };
   return apiPost(auth, "/training/program/query", body);
+}
+
+// --- Activities (completed workouts recorded by the watch) ---
+
+export interface ActivitySummary {
+  labelId: string;
+  date: number;
+  name: string;
+  sportType: number;
+  mode: number;
+  subMode: number;
+  startTime: number;
+  endTime: number;
+  totalTime: number;
+  workoutTime: number;
+  distance: number;
+  calorie: number;
+  avgHr: number;
+  trainingLoad: number;
+  device: string;
+}
+
+export interface ActivityQueryOptions {
+  pageNumber?: number;
+  size?: number;
+  startDate?: number;
+  endDate?: number;
+}
+
+/** Per-set/exercise item inside a strength activity's lapList. */
+export interface ActivityLapItem {
+  exerciseIndex: number;
+  exerciseNameKey: string; // e.g. "T1065" or "S3618" (rest)
+  exerciseType: number;
+  reps: number;
+  sets: number;
+  intensityType: number;
+  // intensityValue: workout-template default weight in grams. NOT the actual
+  // weight lifted on a given set — for that, use `weight` on per-set items.
+  intensityValue: number;
+  // Per-set: actual weight lifted in grams. On rollup items (mode 16/17),
+  // this is total volume (Σ kg×reps × 1000), not per-set.
+  weight: number;
+  // mode 14 = working set, 15 = rest between sets, 16 = exercise rollup,
+  // 17 = rest-period rollup. lapType 1 also marks rollups.
+  mode: number;
+  lapType: number;
+  actualValue: number; // rest rows (mode 15/17): rest in centiseconds; totals: reps
+  totalLength: number; // running elapsed time in centiseconds, not a duration
+  time: number; // duration of this row in centiseconds
+  avgHr: number;
+  maxHr: number;
+  minHr: number;
+  calories: number; // kcal × 1000 (matches list endpoint convention)
+  startTimestamp: number;
+  endTimestamp: number;
+  targetSets: number;
+  targetType: number;
+  targetValue: number;
+}
+
+export interface ActivityDetail {
+  summary: Record<string, unknown>;
+  lapList: Array<{
+    type: number;
+    lapDistance: number;
+    lapItemList: ActivityLapItem[];
+  }>;
+  muscleList: Array<{
+    muscleId: number;
+    muscleKey: string;
+    sets: number;
+    reps: number;
+    duration: number;
+    level: number;
+    muscleType: number;
+  }>;
+  [k: string]: unknown;
+}
+
+/**
+ * Fetch the full details of a single recorded activity, including per-exercise
+ * sets, reps, weights and rest periods. The COROS web app calls this with
+ * POST + empty body and the parameters in the query string.
+ */
+export async function queryActivityDetail(
+  auth: AuthData,
+  labelId: string,
+  sportType: number,
+  screenW = 565,
+  screenH = 982
+): Promise<ActivityDetail> {
+  const result = await apiRequest(auth, "/activity/detail/query", {
+    method: "POST",
+    params: { screenW, screenH, labelId, sportType },
+  });
+  return result.data as ActivityDetail;
+}
+
+/**
+ * List recorded activities, newest first. COROS filters by date server-side
+ * via startDay/endDay (YYYYMMDD); it silently ignores startDate/endDate.
+ */
+export async function queryActivities(
+  auth: AuthData,
+  options: ActivityQueryOptions = {}
+): Promise<{ count: number; dataList: ActivitySummary[] }> {
+  const result = (await apiGet(auth, "/activity/query", activityQueryParams(options))) as {
+    data: { count: number; dataList?: ActivitySummary[] };
+  };
+  return { count: result.data.count, dataList: result.data.dataList ?? [] };
+}
+
+export function activityQueryParams(
+  options: ActivityQueryOptions
+): Record<string, string | number> {
+  const params: Record<string, string | number> = {
+    pageNumber: options.pageNumber ?? 1,
+    size: options.size ?? 20,
+  };
+  if (options.startDate !== undefined) params.startDay = options.startDate;
+  if (options.endDate !== undefined) params.endDay = options.endDate;
+  return params;
 }

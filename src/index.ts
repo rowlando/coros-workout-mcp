@@ -11,10 +11,17 @@ import {
   calculateWorkout,
   addWorkout,
   queryWorkouts,
+  queryActivities,
+  queryActivityDetail,
   queryExerciseCatalog,
   fetchI18nStrings,
   buildCatalogFromRaw,
 } from "./coros-api.js";
+import {
+  formatActivity,
+  formatDuration,
+  formatStrengthExercises,
+} from "./activity-format.js";
 import {
   searchExercises,
   findByName,
@@ -433,6 +440,170 @@ server.tool(
           {
             type: "text" as const,
             text: `Failed to list workouts: ${error instanceof Error ? error.message : String(error)}`,
+          },
+        ],
+        isError: true,
+      };
+    }
+  }
+);
+
+// --- Tool: list_activities ---
+server.tool(
+  "list_activities",
+  "List actual completed activities recorded by the COROS watch (runs, swims, strength sessions, etc.). Use startDate/endDate (YYYYMMDD integers) to filter by date range. Each entry includes the labelId and sportType needed by get_activity_detail.",
+  {
+    startDate: z
+      .number()
+      .int()
+      .optional()
+      .describe("Start date as YYYYMMDD integer (e.g. 20260518)"),
+    endDate: z
+      .number()
+      .int()
+      .optional()
+      .describe("End date as YYYYMMDD integer (e.g. 20260524)"),
+    limit: z
+      .number()
+      .int()
+      .min(1)
+      .max(50)
+      .default(20)
+      .describe("Number of activities to return"),
+    pageNumber: z
+      .number()
+      .int()
+      .min(1)
+      .default(1)
+      .describe("Page number for pagination"),
+  },
+  async ({ startDate, endDate, limit, pageNumber }) => {
+    try {
+      const auth = await getValidAuth();
+      if (!auth) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: "Not authenticated. Use authenticate_coros first.",
+            },
+          ],
+          isError: true,
+        };
+      }
+
+      const { count, dataList } = await queryActivities(auth, {
+        pageNumber,
+        size: limit,
+        startDate,
+        endDate,
+      });
+
+      if (dataList.length === 0) {
+        return {
+          content: [
+            { type: "text" as const, text: "No activities found." },
+          ],
+        };
+      }
+
+      const formatted = dataList.map(formatActivity).join("\n");
+
+      const header = `Found ${dataList.length} activit${dataList.length === 1 ? "y" : "ies"} (total available: ${count}):\n\n`;
+      return {
+        content: [{ type: "text" as const, text: header + formatted }],
+      };
+    } catch (error) {
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: `Failed to list activities: ${error instanceof Error ? error.message : String(error)}`,
+          },
+        ],
+        isError: true,
+      };
+    }
+  }
+);
+
+// --- Tool: get_activity_detail ---
+server.tool(
+  "get_activity_detail",
+  "Get the set-by-set breakdown of a recorded strength activity (reps, weight and time for each set, and the rest after it). Pass the labelId from list_activities; sportType also from list_activities (typically 402 for Strength).",
+  {
+    labelId: z
+      .string()
+      .describe("Activity labelId from list_activities (e.g. '477574221250199560')"),
+    sportType: z
+      .number()
+      .int()
+      .default(402)
+      .describe("Sport type from list_activities (402 = Strength)"),
+  },
+  async ({ labelId, sportType }) => {
+    try {
+      const auth = await getValidAuth();
+      if (!auth) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: "Not authenticated. Use authenticate_coros first.",
+            },
+          ],
+          isError: true,
+        };
+      }
+
+      const detail = await queryActivityDetail(auth, labelId, sportType);
+      const lapItems = detail.lapList?.[0]?.lapItemList ?? [];
+      if (lapItems.length === 0) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: "No exercise data found for this activity.",
+            },
+          ],
+        };
+      }
+
+      const summary = (detail.summary ?? {}) as Record<string, number>;
+      const totalSets = summary.sets ?? 0;
+      const totalReps = summary.totalReps ?? 0;
+      const totalWeight = summary.totalWeight ?? 0; // grams
+      // detail endpoint reports totalTime in centiseconds (1/100s),
+      // unlike the list endpoint which uses seconds.
+      const durationSec = Math.round((summary.totalTime ?? 0) / 100);
+      const calories = summary.calories ?? 0; // kcal × 1000
+      const avgHr = summary.avgHr ?? 0;
+      const trainingLoad = summary.trainingLoad ?? 0;
+
+      const exerciseSummary = formatStrengthExercises(lapItems);
+
+      const header = [
+        `Activity ${labelId}:`,
+        `  Duration: ${formatDuration(durationSec)}, ${Math.round(calories / 1000)} kcal, avgHR ${avgHr}, TL ${trainingLoad}`,
+        `  Total: ${totalSets} sets, ${totalReps} reps, ${totalWeight / 1000}kg volume`,
+        ``,
+        `Exercises:`,
+      ].join("\n");
+
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: header + "\n" + exerciseSummary,
+          },
+        ],
+      };
+    } catch (error) {
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: `Failed to get activity detail: ${error instanceof Error ? error.message : String(error)}`,
           },
         ],
         isError: true,
