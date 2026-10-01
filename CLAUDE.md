@@ -20,10 +20,11 @@ To run a single test file: `npx vitest run src/__tests__/exercise-catalog.test.t
 
 ## Architecture
 
-**4 source files, clear separation:**
+**5 source files, clear separation:**
 
-- `index.ts` — MCP server setup. Registers 6 tools (`authenticate_coros`, `check_coros_auth`, `search_exercises`, `create_workout`, `update_exercises`, `list_workouts`) using `@modelcontextprotocol/sdk`. STDIO transport only.
-- `coros-api.ts` — COROS API client + payload construction. Handles auth (MD5 password hashing, token storage at `~/.config/coros-workout-mcp/auth.json`), and the workout creation flow: `resolveExercises()` → `calculateWorkout()` (POST `/training/program/calculate`) → `addWorkout()` (POST `/training/program/add`). Also contains `buildCatalogFromRaw()` for the `update_exercises` tool.
+- `index.ts` — MCP server setup. Registers 8 tools (`authenticate_coros`, `check_coros_auth`, `search_exercises`, `create_workout`, `update_exercises`, `list_workouts`, `list_activities`, `get_activity_detail`) using `@modelcontextprotocol/sdk`. STDIO transport only.
+- `coros-api.ts` — COROS API client + payload construction. Handles auth (MD5 password hashing, token storage at `~/.config/coros-workout-mcp/auth.json`), and the workout creation flow: `resolveExercises()` → `calculateWorkout()` (POST `/training/program/calculate`) → `addWorkout()` (POST `/training/program/add`). Also contains `buildCatalogFromRaw()` for the `update_exercises` tool, and the recorded-activity queries `queryActivities()` (GET `/activity/query`) and `queryActivityDetail()` (POST `/activity/detail/query`). All authenticated calls go through `apiRequest()`.
+- `activity-format.ts` — Formats recorded activities for tool output: `formatActivity()` for `list_activities` (includes the `labelId`/`sportType` that `get_activity_detail` needs) and `formatStrengthExercises()` for the set-by-set breakdown.
 - `exercise-catalog.ts` — In-memory exercise search engine. Loads `data/exercises.json` lazily, provides `findByName()` (exact, case-insensitive), `searchExercises()` (fuzzy name + muscle/bodyPart/equipment filters). The catalog is the single source of truth for exercise names used in `create_workout`.
 - `types.ts` — All interfaces and enum maps. Numeric code → human-readable name mappings for muscles, body parts, equipment. Key types: `CatalogExercise` (bundled catalog), `ExercisePayload` (API payload), `ExerciseOverrides` (user input), `RawExercise` (API response).
 
@@ -37,7 +38,9 @@ User provides exercise names + overrides → `findByName()` validates against ca
 - Exercise names in `create_workout` must match `data/exercises.json` exactly (case-insensitive). The `search_exercises` tool helps users find correct names.
 - API auth requires `accesstoken` header + `yfheader` JSON with `userId`. Logging in via API invalidates the COROS web app session.
 - Base URLs: `teameuapi.coros.com` (EU), `teamapi.coros.com` (US). Region defaults to `eu`.
-- `sportType: 4` = Strength Training throughout the codebase.
+- `sportType: 4` = Strength Training for Training Hub workouts. Recorded activities use a different numbering (`402` = Strength); see `SPORT_TYPE_NAMES` in `activity-format.ts`.
+- `/activity/query` filters dates with `startDay`/`endDay` (YYYYMMDD); it silently ignores `startDate`/`endDate`.
+- Activity detail units differ from the list endpoint: times are centiseconds, weights grams, calories kcal×1000. In `lapItemList`, `mode` 14 = working set, 15 = rest after a set, 16 = exercise total, 17 = rest total.
 
 ## Exercise Catalog
 

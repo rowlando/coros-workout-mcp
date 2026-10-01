@@ -1,6 +1,6 @@
 # coros-workout-mcp
 
-MCP server for creating COROS strength workouts via the Training Hub API. Lets Claude design workouts and push them directly to your COROS watch.
+MCP server for creating COROS strength workouts via the Training Hub API. Lets Claude design workouts and push them directly to your COROS watch, then review what you actually did, set by set.
 
 See the MCP in action: [YouTube walkthrough](https://www.youtube.com/watch?v=I2I2p7hNZjM)
 
@@ -77,12 +77,16 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 | `create_workout` | Build and push a strength workout to COROS |
 | `update_exercises` | Fetch the latest exercise catalog from COROS and rebuild locally |
 | `list_workouts` | List existing workouts |
+| `list_activities` | List activities recorded by your watch, optionally filtered by date |
+| `get_activity_detail` | Set-by-set breakdown of a recorded strength activity (reps, weight, time, rest) |
 
 ## Example conversation
 
 > "Search for chest exercises with bodyweight"
 >
 > "Create a workout called 'Quick Push' with 4x15 Push-ups, 3x10 Diamond Push-ups, and 3x20 Decline Push-ups with 45s rest"
+>
+> "How did my strength session on 16 March go, set by set?"
 
 ## Updating the exercise catalog
 
