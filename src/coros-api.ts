@@ -176,7 +176,7 @@ export async function fetchI18nStrings(): Promise<Record<string, string>> {
 /**
  * Transform raw exercises + i18n map into CatalogExercise[].
  * Name resolution order: i18n[codeName] → existingCatalog[codeName].name → codeName
- * The i18n file only covers ~100 of ~383 exercises, so the existing catalog
+ * The i18n file only covers ~100 of ~388 exercises, so the existing catalog
  * provides names for exercises that predate the i18n system.
  */
 export function buildCatalogFromRaw(

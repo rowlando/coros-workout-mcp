@@ -44,7 +44,7 @@ User provides exercise names + overrides → `findByName()` validates against ca
 
 ## Exercise Catalog
 
-`data/exercises.json` contains ~383 exercises bundled with the server. The `update_exercises` tool refreshes it from the COROS API + i18n CDN strings. Name resolution order: i18n → existing catalog fallback → raw code name (e.g. "T1004"). Only ~100 exercises have i18n coverage.
+`data/exercises.json` contains ~388 exercises bundled with the server. The `update_exercises` tool refreshes it from the COROS API + i18n CDN strings. Name resolution order: i18n → existing catalog fallback → raw code name (e.g. "T1004"). Only ~100 exercises have i18n coverage.
 
 ## Reference Material
 

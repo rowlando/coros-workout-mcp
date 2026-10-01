@@ -117,7 +117,7 @@ server.tool(
 // --- Tool: search_exercises ---
 server.tool(
   "search_exercises",
-  "Search the COROS exercise catalog (~383 strength exercises). Filter by name, muscle group, body part, and/or equipment. Returns exercise names, muscles, equipment, and default sets/reps.",
+  "Search the COROS exercise catalog (~388 strength exercises). Filter by name, muscle group, body part, and/or equipment. Returns exercise names, muscles, equipment, and default sets/reps.",
   {
     query: z.string().optional().describe("Search by exercise name (partial match, e.g. 'bench press')"),
     muscle: z.string().optional().describe("Filter by muscle group (e.g. 'chest', 'biceps', 'glutes', 'quadriceps')"),
