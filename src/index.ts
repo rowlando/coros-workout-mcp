@@ -33,7 +33,7 @@ import type { Region } from "./types.js";
 
 const server = new McpServer({
   name: "coros-workout",
-  version: "1.0.0",
+  version: "1.1.0",
 });
 
 // --- Tool: authenticate_coros ---
