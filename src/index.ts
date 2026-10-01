@@ -65,7 +65,7 @@ server.tool(
         content: [
           {
             type: "text" as const,
-            text: `Authenticated successfully. User ID: ${auth.userId}, Region: ${auth.region}. Token stored at ~/.coros-workout-mcp/auth.json`,
+            text: `Authenticated successfully. User ID: ${auth.userId}, Region: ${auth.region}. Token stored at ~/.config/coros-workout-mcp/auth.json`,
           },
         ],
       };
