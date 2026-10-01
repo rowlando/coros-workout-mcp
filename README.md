@@ -79,7 +79,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 |------|-------------|
 | `authenticate_coros` | Log in with email/password (or auto-login from env vars) |
 | `check_coros_auth` | Verify current auth status |
-| `search_exercises` | Search ~383 exercises by name, muscle, body part, equipment |
+| `search_exercises` | Search ~388 exercises by name, muscle, body part, equipment |
 | `create_workout` | Build and push a strength workout to COROS |
 | `update_exercises` | Fetch the latest exercise catalog from COROS and rebuild locally |
 | `list_workouts` | List existing workouts |

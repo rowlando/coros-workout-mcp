@@ -3681,6 +3681,71 @@
     "desc": ""
   },
   {
+    "id": "476762713375293440",
+    "name": "Burpee Broad Jumps",
+    "codeName": "T1396",
+    "overview": "sid_strength_burpee",
+    "animationId": 1,
+    "muscle": [
+      7
+    ],
+    "muscleRelevance": [
+      4,
+      1,
+      2,
+      6,
+      8,
+      14
+    ],
+    "part": [
+      0
+    ],
+    "equipment": [
+      1
+    ],
+    "exerciseType": 2,
+    "targetType": 2,
+    "targetValue": 60,
+    "intensityType": 1,
+    "restType": 1,
+    "restValue": 30,
+    "sets": 1,
+    "sortNo": 0,
+    "sportType": 4,
+    "status": 1,
+    "createTimestamp": 1776079510,
+    "thumbnailUrl": "https://s3eu.coros.com/source/exercise_img/0/f8171776f4c24d70b2dd59192929413e.png",
+    "coverUrlArrStr": "https://s3eu.coros.com/source/exercise_img/0/f8171776f4c24d70b2dd59192929413e.png,https://s3eu.coros.com/source/exercise_img/0/98ab2c06f1d94263af71f5b225595313.png,https://s3eu.coros.com/source/exercise_img/0/0d23a3bcf4e34a779739080b45e2a7b7.png,https://s3eu.coros.com/source/exercise_img/0/567409c3755a4a7d8fa7df0e23ae18a0.png,https://s3eu.coros.com/source/exercise_img/0/06cb33e1ab554066a33e6e16dcc3fdcf.png",
+    "videoUrlArrStr": "https://s3eu.coros.com/source/exercise_gif/0/0519b769704f48a9afec00446def20c4.mp4,https://s3eu.coros.com/source/exercise_gif/0/a8c2d0083d134327be8f68897f51e4e5.mp4,https://s3eu.coros.com/source/exercise_gif/0/dd1e87e77f3448ebaeaeea4b86d5ea21.mp4,https://s3eu.coros.com/source/exercise_gif/0/4dbddc9fe48e47a2a50992f25b1b7d67.mp4,https://s3eu.coros.com/source/exercise_gif/0/be189be8c27e472780eb9c1df925c9ec.mp4",
+    "videoInfos": [
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/f8171776f4c24d70b2dd59192929413e.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/0519b769704f48a9afec00446def20c4.mp4"
+      },
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/98ab2c06f1d94263af71f5b225595313.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/a8c2d0083d134327be8f68897f51e4e5.mp4"
+      },
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/0d23a3bcf4e34a779739080b45e2a7b7.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/dd1e87e77f3448ebaeaeea4b86d5ea21.mp4"
+      },
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/567409c3755a4a7d8fa7df0e23ae18a0.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/4dbddc9fe48e47a2a50992f25b1b7d67.mp4"
+      },
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/06cb33e1ab554066a33e6e16dcc3fdcf.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/be189be8c27e472780eb9c1df925c9ec.mp4"
+      }
+    ],
+    "muscleText": "Glutes",
+    "secondaryMuscleText": "Triceps,Deltoids,Chest,Lower Back,Quadriceps,Posterior Thigh",
+    "partText": "Whole Body",
+    "equipmentText": "Bodyweight",
+    "desc": "Starting Point:\nStand with feet together and body upright behind the starting line.\n\nAction:\nDrop into a burpee until your chest touches the ground. Push back up into a squat position, then swing your arms to jump forward as far as possible.\n\nTips:\nTry to land softly to protect your joints. Maintain a fluid motion and minimize the rest time between the burpee and the jump."
+  },
+  {
     "id": "425827765602926593",
     "name": "Burpees",
     "codeName": "T1007",
@@ -10449,8 +10514,7 @@
     "exerciseType": 2,
     "targetType": 2,
     "targetValue": 30,
-    "intensityType": 1,
-    "intensityValue": 0,
+    "intensityType": 0,
     "restType": 1,
     "restValue": 30,
     "sets": 4,
@@ -17787,7 +17851,7 @@
     "secondaryMuscleText": "Latissimus Dorsi",
     "partText": "Back,Arms",
     "equipmentText": "Bosu Ball",
-    "desc": "Starting Position:\nHold a D - shaped handle or straight grip and attach it to a high pulley.Stand 40 to 50 cm away from the puller.Keep your feet spaced out, toes pointing out, knees slightly bent.Keep your feet firmly on the spot, hold the bar in both hands, and slowly turn, keeping your stomach and back straight and under pressure.\n\r\nAction:\nPull the handle from the Starting Position to the Position of the other foot with both arms. After a short stay, slowly return to the Starting Position.\n\r\nTips:\nIn the process of restoring the Starting Position, it is necessary to maintain a certain speed with the strength of both arms."
+    "desc": "Starting Position:\nSit upright on the machine seat. Grasp the overhead bar with both hands, arms fully extended.\n\nAction:\nPull the bar down toward your upper chest until you cannot pull further. Pause briefly, then slowly return to the starting position.\n\nTips:\nControl the upward return with arm tension; do not release completely or let the weight drop freely."
   },
   {
     "id": "425831107355918337",
@@ -19187,6 +19251,53 @@
     "desc": "Starting Position:\nLie down on the bench, knees at 90 degree angles, feet stabilized by the foot pads and place your hands behind your ears.\n\r\nAction:\nRoll your upper body up until your elbows touch your knees (or close to it) and lower yourself back down after a short pause.\n\r\nTips:\nTo avoid pulling your neck with your hands, look straight up instead of looking at your knees."
   },
   {
+    "id": "476760420131192832",
+    "name": "Ski Erg",
+    "codeName": "T1393",
+    "overview": "sid_strength_skierg",
+    "animationId": 375,
+    "muscle": [
+      12
+    ],
+    "muscleRelevance": [
+      4,
+      6,
+      14,
+      1
+    ],
+    "part": [
+      0
+    ],
+    "equipment": [
+      16
+    ],
+    "exerciseType": 2,
+    "targetType": 2,
+    "targetValue": 60,
+    "intensityType": 0,
+    "restType": 1,
+    "restValue": 30,
+    "sets": 1,
+    "sortNo": 0,
+    "sportType": 4,
+    "status": 1,
+    "createTimestamp": 1776070967,
+    "thumbnailUrl": "https://s3eu.coros.com/source/exercise_img/0/4b5473e8d3f24d9aa1a4883b277c302b.png",
+    "coverUrlArrStr": "https://s3eu.coros.com/source/exercise_img/0/4b5473e8d3f24d9aa1a4883b277c302b.png",
+    "videoUrlArrStr": "https://s3eu.coros.com/source/exercise_gif/0/7e7962ecd5cd4125bb257bb227132f33.mp4",
+    "videoInfos": [
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/4b5473e8d3f24d9aa1a4883b277c302b.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/7e7962ecd5cd4125bb257bb227132f33.mp4"
+      }
+    ],
+    "muscleText": "Biceps",
+    "secondaryMuscleText": "Triceps,Lower Back,Posterior Thigh,Deltoids",
+    "partText": "Whole Body",
+    "equipmentText": "16",
+    "desc": "Starting Point:\nStand facing the SkiErg with feet shoulder-width apart. Reach up and grasp the handles with arms extended above your head, elbows slightly bent, and core engaged.\n\nAction:\nEngage your core and pull the handles downward and backward while driving your hips back into a hinge position. After the arms pass the thighs, use the momentum to return to the starting point.\n\nTips:\nUse your body weight to drive the handles down, not just your arm strength. Maintain a steady rhythm and exhale on the pull."
+  },
+  {
     "id": "426939619892969472",
     "name": "Ski Step",
     "codeName": "T1174",
@@ -19312,6 +19423,102 @@
     "partText": "Whole Body,Legs/Hips",
     "equipmentText": "16",
     "desc": "Starting Position:\nHold the jump rope with both hands in a standing Position.\n\nAction:\nShake both hands in one direction and jump with both legs.Repeat until scheduled.\n\r\nTips:\nKeep your body in rhythm and balance."
+  },
+  {
+    "id": "476761463271374848",
+    "name": "Sled Pull",
+    "codeName": "T1395",
+    "overview": "sid_strength_sledpull",
+    "animationId": 374,
+    "muscle": [
+      12
+    ],
+    "muscleRelevance": [
+      3,
+      11,
+      14,
+      8
+    ],
+    "part": [
+      0
+    ],
+    "equipment": [
+      16
+    ],
+    "exerciseType": 2,
+    "targetType": 2,
+    "targetValue": 60,
+    "intensityType": 1,
+    "intensityValue": 78000,
+    "restType": 1,
+    "restValue": 60,
+    "sets": 1,
+    "sortNo": 0,
+    "sportType": 4,
+    "status": 1,
+    "createTimestamp": 1776074853,
+    "thumbnailUrl": "https://s3eu.coros.com/source/exercise_img/0/3e9f19ad874e471fa3adcd4666f4b5f4.png",
+    "coverUrlArrStr": "https://s3eu.coros.com/source/exercise_img/0/3e9f19ad874e471fa3adcd4666f4b5f4.png",
+    "videoUrlArrStr": "https://s3eu.coros.com/source/exercise_gif/0/9a783bdae387461dbf254798e8c6aa09.mp4",
+    "videoInfos": [
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/3e9f19ad874e471fa3adcd4666f4b5f4.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/9a783bdae387461dbf254798e8c6aa09.mp4"
+      }
+    ],
+    "muscleText": "Biceps",
+    "secondaryMuscleText": "Latissimus Dorsi,Forearms,Posterior Thigh,Quadriceps",
+    "partText": "Whole Body",
+    "equipmentText": "16",
+    "desc": "Starting Point:\nStand behind the designated line with a firm, stable stance. Grasp the rope with both hands and lean your body weight slightly backward.\n\nAction:\nPull the rope toward you using an alternating hand-over-hand motion or by stepping backward to drag the sled. Coordinate power from your legs, core, and back.\n\nTips:\nKeep your core braced to protect your lower back. Ensure the sled fully crosses the designated finish line before finishing."
+  },
+  {
+    "id": "476761244228042852",
+    "name": "Sled Push",
+    "codeName": "T1394",
+    "overview": "sid_strength_sledpush",
+    "animationId": 377,
+    "muscle": [
+      7
+    ],
+    "muscleRelevance": [
+      14,
+      8,
+      15,
+      13
+    ],
+    "part": [
+      0
+    ],
+    "equipment": [
+      16
+    ],
+    "exerciseType": 2,
+    "targetType": 2,
+    "targetValue": 60,
+    "intensityType": 1,
+    "intensityValue": 102000,
+    "restType": 1,
+    "restValue": 30,
+    "sets": 1,
+    "sortNo": 0,
+    "sportType": 4,
+    "status": 1,
+    "createTimestamp": 1776074038,
+    "thumbnailUrl": "https://s3eu.coros.com/source/exercise_img/0/44aafcb71c954637a65dc81e5c0d822b.png",
+    "coverUrlArrStr": "https://s3eu.coros.com/source/exercise_img/0/44aafcb71c954637a65dc81e5c0d822b.png",
+    "videoUrlArrStr": "https://s3eu.coros.com/source/exercise_gif/0/b5714416b90f4ffcab2cefade83bb4e2.mp4",
+    "videoInfos": [
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/44aafcb71c954637a65dc81e5c0d822b.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/b5714416b90f4ffcab2cefade83bb4e2.mp4"
+      }
+    ],
+    "muscleText": "Glutes",
+    "secondaryMuscleText": "Posterior Thigh,Quadriceps,Hip Flexors,Calves",
+    "partText": "Whole Body",
+    "equipmentText": "16",
+    "desc": "Starting Point:\nGrip the sled uprights with arms extended, or press your upper arms and shoulders against the poles while grasping them. Lean your body forward at a 45-degree angle with your feet firmly planted.\n\nAction:\nDrive through the balls of your feet using explosive leg power, keeping your torso stable to push the sled forward. Take small, powerful steps to ensure continuous force transfer.\n\nTips:\nPressing your upper arms/shoulders against the poles allows for a more direct transfer of power from your torso. Keep your back straight and avoid rounding."
   },
   {
     "id": "428907861402370048",
@@ -23601,6 +23808,54 @@
     "partText": "Legs/Hips",
     "equipmentText": "Bodyweight",
     "desc": "-Starting Position:\nStand in a standing position with your hands naturally down or crossed.\n\n-Action:\nKeeping your body stable, take a large step forward with one leg. The front leg lands with the knee bent and the thigh parallel to the ground. Bend the back leg with the thigh perpendicular to the ground and the toes touching the ground.\nRise up, switch legs and step forward until you form a lunge again. Alternate this movement.\nSwing your hands naturally or cross your arms for balance during the march.\n\n-Tip:\nMaintain balance and avoid swaying while marching."
+  },
+  {
+    "id": "476762944229785600",
+    "name": "Wall Balls",
+    "codeName": "T1397",
+    "overview": "sid_strength_wallballs",
+    "animationId": 376,
+    "muscle": [
+      7
+    ],
+    "muscleRelevance": [
+      14,
+      1,
+      4,
+      6
+    ],
+    "part": [
+      0
+    ],
+    "equipment": [
+      10
+    ],
+    "exerciseType": 2,
+    "targetType": 2,
+    "targetValue": 60,
+    "intensityType": 1,
+    "intensityValue": 4000,
+    "restType": 1,
+    "restValue": 30,
+    "sets": 1,
+    "sortNo": 0,
+    "sportType": 4,
+    "status": 1,
+    "createTimestamp": 1776080370,
+    "thumbnailUrl": "https://s3eu.coros.com/source/exercise_img/0/5cfa892f797547719dbc7e6cd9f9e8a3.png",
+    "coverUrlArrStr": "https://s3eu.coros.com/source/exercise_img/0/5cfa892f797547719dbc7e6cd9f9e8a3.png",
+    "videoUrlArrStr": "https://s3eu.coros.com/source/exercise_gif/0/83b3707789d845be8729a331ab93695a.mp4",
+    "videoInfos": [
+      {
+        "coverUrl": "https://s3eu.coros.com/source/exercise_img/0/5cfa892f797547719dbc7e6cd9f9e8a3.png",
+        "videoUrl": "https://s3eu.coros.com/source/exercise_gif/0/83b3707789d845be8729a331ab93695a.mp4"
+      }
+    ],
+    "muscleText": "Glutes",
+    "secondaryMuscleText": "Posterior Thigh,Deltoids,Triceps,Lower Back",
+    "partText": "Whole Body",
+    "equipmentText": "Bench",
+    "desc": "Starting Point: Stand facing the wall with feet slightly wider than shoulder-width. Hold the medicine ball at chest height, cupping the bottom of the ball. Action: Perform a full squat until thighs are below parallel. Drive up explosively and throw the ball to hit the target at the required height. Catch the ball and go directly into the next squat. Tips: Use the squat movement to absorb the ball's impact upon catching. Always keep your eyes on the target."
   },
   {
     "id": "469646870080307200",
