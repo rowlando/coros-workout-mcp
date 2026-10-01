@@ -612,85 +612,28 @@ export async function queryActivityDetail(
   return result.data as ActivityDetail;
 }
 
-export interface ActivityPage {
-  count: number;
-  dataList: ActivitySummary[];
-}
-
-export interface ActivityQueryResult extends ActivityPage {
-  /** True when the date-range scan hit MAX_SCAN_PAGES before reaching startDate. */
-  truncated: boolean;
-}
-
-export type ActivityPageFetcher = (
-  pageNumber: number,
-  size: number
-) => Promise<ActivityPage>;
-
-/** Page size used when scanning for a date range. */
-export const SCAN_PAGE_SIZE = 20;
-/** Upper bound on pages fetched for one date-range query (500 activities). */
-export const MAX_SCAN_PAGES = 25;
-
 /**
- * Return activities, optionally filtered to [startDate, endDate] (YYYYMMDD).
- *
- * The COROS endpoint ignores date params, so with a date range we scan pages
- * (newest first) until we pass startDate, run out of activities, or hit
- * MAX_SCAN_PAGES. pageNumber/size then paginate over the filtered matches,
- * and count is the number of matches found.
+ * List recorded activities, newest first. COROS filters by date server-side
+ * via startDay/endDay (YYYYMMDD); it silently ignores startDate/endDate.
  */
-export async function collectActivities(
-  fetchPage: ActivityPageFetcher,
-  options: ActivityQueryOptions = {}
-): Promise<ActivityQueryResult> {
-  const pageNumber = options.pageNumber ?? 1;
-  const size = options.size ?? 20;
-  const { startDate, endDate } = options;
-
-  if (startDate === undefined && endDate === undefined) {
-    const page = await fetchPage(pageNumber, size);
-    return { ...page, truncated: false };
-  }
-
-  const matches: ActivitySummary[] = [];
-  let scanned = 0;
-  let truncated = false;
-  for (let p = 1; ; p++) {
-    if (p > MAX_SCAN_PAGES) {
-      truncated = true;
-      break;
-    }
-    const page = await fetchPage(p, SCAN_PAGE_SIZE);
-    if (page.dataList.length === 0) break;
-    scanned += page.dataList.length;
-    for (const a of page.dataList) {
-      if (startDate !== undefined && a.date < startDate) continue;
-      if (endDate !== undefined && a.date > endDate) continue;
-      matches.push(a);
-    }
-    const oldest = Math.min(...page.dataList.map((a) => a.date));
-    if (startDate !== undefined && oldest < startDate) break;
-    if (scanned >= page.count) break;
-  }
-
-  const offset = (pageNumber - 1) * size;
-  return {
-    count: matches.length,
-    dataList: matches.slice(offset, offset + size),
-    truncated,
-  };
-}
-
 export async function queryActivities(
   auth: AuthData,
   options: ActivityQueryOptions = {}
-): Promise<ActivityQueryResult> {
-  return collectActivities(async (pageNumber, size) => {
-    const result = (await apiGet(auth, "/activity/query", {
-      pageNumber,
-      size,
-    })) as { data: { count: number; dataList?: ActivitySummary[] } };
-    return { count: result.data.count, dataList: result.data.dataList ?? [] };
-  }, options);
+): Promise<{ count: number; dataList: ActivitySummary[] }> {
+  const result = (await apiGet(auth, "/activity/query", activityQueryParams(options))) as {
+    data: { count: number; dataList?: ActivitySummary[] };
+  };
+  return { count: result.data.count, dataList: result.data.dataList ?? [] };
+}
+
+export function activityQueryParams(
+  options: ActivityQueryOptions
+): Record<string, string | number> {
+  const params: Record<string, string | number> = {
+    pageNumber: options.pageNumber ?? 1,
+    size: options.size ?? 20,
+  };
+  if (options.startDate !== undefined) params.startDay = options.startDate;
+  if (options.endDate !== undefined) params.endDay = options.endDate;
+  return params;
 }
