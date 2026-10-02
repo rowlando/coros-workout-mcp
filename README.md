@@ -110,4 +110,5 @@ The bundled exercise catalog (`data/exercises.json`) is a static snapshot. If CO
 npm test           # Run unit tests
 npm run test:watch # Watch mode
 npm run build      # Compile TypeScript
+npm run typecheck  # Type-check source and tests
 ```

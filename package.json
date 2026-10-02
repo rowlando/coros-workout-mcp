@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "typecheck": "tsc -p tsconfig.test.json",
     "prepare-catalog": "tsx scripts/prepare-catalog.ts",
     "test": "vitest run",
     "test:watch": "vitest",

@@ -11,6 +11,7 @@ MCP server that lets Claude design strength workouts and push them to a COROS wa
 ```bash
 npm install && npm run build   # TypeScript → dist/
 npm test                       # vitest (unit tests only, no API calls)
+npm run typecheck              # type-check src, scripts and tests (CI runs this)
 npm run test:watch             # vitest watch mode
 ```
 
