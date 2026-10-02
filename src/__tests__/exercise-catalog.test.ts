@@ -10,9 +10,9 @@ import {
 
 describe("exercise-catalog", () => {
   describe("getAllExercises", () => {
-    it("loads the catalog with 388 exercises", () => {
+    it("loads the catalog with 382 exercises", () => {
       const all = getAllExercises();
-      expect(all.length).toBe(388);
+      expect(all.length).toBe(382);
     });
 
     it("each exercise has required fields", () => {
@@ -122,7 +122,7 @@ describe("exercise-catalog", () => {
 
     it("returns all exercises when no filters given", () => {
       const results = searchExercises({});
-      expect(results.length).toBe(388);
+      expect(results.length).toBe(382);
     });
   });
 });

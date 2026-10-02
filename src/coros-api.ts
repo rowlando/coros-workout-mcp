@@ -194,6 +194,10 @@ export function buildCatalogFromRaw(
   }
 
   for (const r of rawExercises) {
+    // Skip the account's own custom exercises (access=1); the bundled catalog
+    // holds only COROS built-ins (access=0).
+    if (r.access !== 0) continue;
+
     // Resolve human-readable name:
     // 1. i18n (code name key, e.g. "T1300" → "Weighted Jump Squats")
     // 2. Existing catalog entry (for older exercises without i18n)

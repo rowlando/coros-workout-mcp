@@ -1,10 +1,12 @@
 import { describe, it, expect } from "vitest";
 import {
+  buildCatalogFromRaw,
   buildExercisePayload,
   buildWorkoutPayload,
   resolveExercises,
 } from "../coros-api.js";
 import { findByName } from "../exercise-catalog.js";
+import type { RawExercise } from "../types.js";
 
 describe("coros-api payload construction", () => {
   describe("buildExercisePayload", () => {
@@ -144,5 +146,19 @@ describe("coros-api payload construction", () => {
         resolveExercises([{ name: "Nonexistent Exercise" }])
       ).toThrow('Exercise not found in catalog: "Nonexistent Exercise"');
     });
+  });
+});
+
+describe("buildCatalogFromRaw", () => {
+  const raw = (name: string, access: number) =>
+    ({ name, access, muscle: [], muscleRelevance: [], part: [], equipment: [] }) as unknown as RawExercise;
+
+  it("excludes the account's custom exercises (access=1)", () => {
+    const { catalog } = buildCatalogFromRaw(
+      [raw("T1004", 0), raw("Loaded carry", 1)],
+      { T1004: "Push-ups" }
+    );
+
+    expect(catalog.map((e) => e.name)).toEqual(["Push-ups"]);
   });
 });
