@@ -3644,43 +3644,6 @@
     "desc": "Starting Position:\nLie on the floor, knees at 90 degree angles and place your hands flat on the floor, arms extended.\n\r\nAction:\nRaise your buttocks from the floor as high as you comfortably can and lower it back down after a short pause.\n\r\nTips:\nYour feet and hands should not move throughout."
   },
   {
-    "id": "458241634738552842",
-    "name": "Bridging Psoas March",
-    "codeName": "Bridging Psoas March\n",
-    "overview": "start with feet on a box with legs fully extended and a small resistance band around the feet. Lift hips off the ground and maintains this hip height while one leg pulls into chest. ",
-    "muscle": [
-      14
-    ],
-    "muscleRelevance": [],
-    "part": [
-      5
-    ],
-    "equipment": [
-      9
-    ],
-    "exerciseType": 2,
-    "targetType": 3,
-    "targetValue": 15,
-    "intensityType": 1,
-    "intensityValue": 0,
-    "restType": 1,
-    "restValue": 30,
-    "sets": 1,
-    "sortNo": 0,
-    "sportType": 4,
-    "status": 1,
-    "createTimestamp": 1707083117,
-    "thumbnailUrl": "",
-    "sourceUrl": "",
-    "videoUrl": "",
-    "videoInfos": [],
-    "muscleText": "Posterior Thigh",
-    "secondaryMuscleText": "",
-    "partText": "Legs/Hips",
-    "equipmentText": "Medicine Ball",
-    "desc": ""
-  },
-  {
     "id": "476762713375293440",
     "name": "Burpee Broad Jumps",
     "codeName": "T1396",
@@ -11956,43 +11919,6 @@
     "desc": "-Starting Position:\nStand with your feet open and wide, toes pointed outward. Hands clasped in front of chest.\n\n-Action:\nSquat to one side, noting that the squatting leg is oriented in the same direction as the toes. Once the thigh is nearly parallel to the floor, pause briefly and return to the starting position. Alternate between right and left legs or complete one set with each leg on one side.\n\n-Tip:\nStop the movement if you experience discomfort.\nWeights can be used to make the movement more difficult."
   },
   {
-    "id": "458241167394521109",
-    "name": "Lateral step ups",
-    "codeName": "Lateral step ups",
-    "overview": "Lateral step-ups involve stepping one foot sideways onto a step and balancing on that leg as you hover the other foot off the floor. ",
-    "muscle": [
-      7
-    ],
-    "muscleRelevance": [],
-    "part": [
-      5
-    ],
-    "equipment": [
-      1
-    ],
-    "exerciseType": 2,
-    "targetType": 3,
-    "targetValue": 15,
-    "intensityType": 1,
-    "intensityValue": 0,
-    "restType": 1,
-    "restValue": 30,
-    "sets": 1,
-    "sortNo": 0,
-    "sportType": 4,
-    "status": 1,
-    "createTimestamp": 1707081376,
-    "thumbnailUrl": "",
-    "sourceUrl": "",
-    "videoUrl": "",
-    "videoInfos": [],
-    "muscleText": "Glutes",
-    "secondaryMuscleText": "",
-    "partText": "Legs/Hips",
-    "equipmentText": "Bodyweight",
-    "desc": ""
-  },
-  {
     "id": "428453257099264000",
     "name": "Lean Over And Touch Your Shoulders Alte",
     "codeName": "T1183",
@@ -12437,76 +12363,6 @@
     "partText": "Legs/Hips",
     "equipmentText": "Bodyweight",
     "desc": "Starting Position:\nLie flat on a yoga mat with your knees at a 90-degree Angle and place your hands flat on the floor with your arms at your sides.\n\r\nAction:\nRaise the hips and hips as high as possible, leaving the rest of the body as it is, and lowering them slowly after a brief pause.\n\r\nTips:\nPay attention to the power source, do not use your hands and feet for power."
-  },
-  {
-    "id": "458241748018315274",
-    "name": "Loaded carry",
-    "codeName": "Loaded carry",
-    "overview": "Heavy weight in each hand. Axial loading for bones. Walk. Each step lift knee up for single leg exercise purpose. Do 20 steps. ",
-    "muscle": [],
-    "muscleRelevance": [],
-    "part": [
-      0
-    ],
-    "equipment": [
-      11
-    ],
-    "exerciseType": 2,
-    "targetType": 3,
-    "targetValue": 15,
-    "intensityType": 1,
-    "intensityValue": 0,
-    "restType": 1,
-    "restValue": 30,
-    "sets": 1,
-    "sortNo": 0,
-    "sportType": 4,
-    "status": 1,
-    "createTimestamp": 1707083539,
-    "thumbnailUrl": "",
-    "sourceUrl": "",
-    "videoUrl": "",
-    "videoInfos": [],
-    "muscleText": "",
-    "secondaryMuscleText": "",
-    "partText": "Whole Body",
-    "equipmentText": "Kettlebell",
-    "desc": ""
-  },
-  {
-    "id": "458241868816367621",
-    "name": "Loaded creeper march",
-    "codeName": "Loaded creeper march",
-    "overview": "Hold heavyweight in hands. Bend slightly at knees. Walk on tip toes. Exercises soleus muscle. ",
-    "muscle": [
-      15
-    ],
-    "muscleRelevance": [],
-    "part": [
-      5
-    ],
-    "equipment": [],
-    "exerciseType": 2,
-    "targetType": 3,
-    "targetValue": 15,
-    "intensityType": 1,
-    "intensityValue": 0,
-    "restType": 1,
-    "restValue": 30,
-    "sets": 1,
-    "sortNo": 0,
-    "sportType": 4,
-    "status": 1,
-    "createTimestamp": 1707083989,
-    "thumbnailUrl": "",
-    "sourceUrl": "",
-    "videoUrl": "",
-    "videoInfos": [],
-    "muscleText": "Hip Flexors",
-    "secondaryMuscleText": "",
-    "partText": "Legs/Hips",
-    "equipmentText": "",
-    "desc": ""
   },
   {
     "id": "425831365053956096",
@@ -15443,43 +15299,6 @@
     "partText": "Arms",
     "equipmentText": "Barbells,Gym Equipment",
     "desc": "Starting Position:\nPlace your upper arms against the arm rests and grab the easy-curl-bar with your arms close to being fully extended.\n\r\nAction:\nRaise the easy-curl-bar up until your forearms are perpendicular to the floor and lower it back down after a short pause.\n\r\nTips:\nKeep your back and upper arms still throughout."
-  },
-  {
-    "id": "458241289798991888",
-    "name": "Prisoner Calf raise",
-    "codeName": "Prisoner Calf raise",
-    "overview": "Hands behind head. One foot on box. Calf raise by pushing foot of floor. ",
-    "muscle": [
-      15
-    ],
-    "muscleRelevance": [],
-    "part": [
-      5
-    ],
-    "equipment": [
-      1
-    ],
-    "exerciseType": 2,
-    "targetType": 3,
-    "targetValue": 15,
-    "intensityType": 1,
-    "intensityValue": 0,
-    "restType": 1,
-    "restValue": 30,
-    "sets": 1,
-    "sortNo": 0,
-    "sportType": 4,
-    "status": 1,
-    "createTimestamp": 1707081832,
-    "thumbnailUrl": "",
-    "sourceUrl": "",
-    "videoUrl": "",
-    "videoInfos": [],
-    "muscleText": "Hip Flexors",
-    "secondaryMuscleText": "",
-    "partText": "Legs/Hips",
-    "equipmentText": "Bodyweight",
-    "desc": ""
   },
   {
     "id": "469654977636384768",
@@ -19835,43 +19654,6 @@
     "partText": "Legs/Hips,1",
     "equipmentText": "Kettlebell",
     "desc": "Starting Position:\nStand above the kettlebell with your feet shoulder-width apart.\n\nAction:\nGradually bend your knees slightly and let your right hand drop until you reach the kettlebell handle.The right hand forcefully throws the kettlebell from the middle of the legs to the back of the body, explosively contract the buttocks and leg muscles, and forcefully pushes the heel off the ground to stand the body in a straight line. At the same time, bending the right elbow, pull the kettlebell toward the body, making the kettlebell moving track close to the body.When the kettlebell swings to the height of the head, the right hand quickly passes through the kettlebell handle, connects the kettlebell to the forearm of the right hand, and maintains the kettlebell to the top support position, maintaining the neutral position of the wrist.\nWhen falling, push the kettlebell with a little force with your finger, then hook the kettlebell with your finger and swing it down, then return to the original position, repeat the action until recommended times.\n\nTip:\nKeep the rhythm and keep your back straight and unbent."
-  },
-  {
-    "id": "458241442540863492",
-    "name": "Soleus raise",
-    "codeName": "Soleus raise",
-    "overview": "Face a wall for balance. Feet shoulder width apart. Bend at knees slightly. Push up from toes to raise heels of the ground. Lower slowly. ",
-    "muscle": [
-      15
-    ],
-    "muscleRelevance": [],
-    "part": [
-      5
-    ],
-    "equipment": [
-      1
-    ],
-    "exerciseType": 2,
-    "targetType": 3,
-    "targetValue": 15,
-    "intensityType": 1,
-    "intensityValue": 0,
-    "restType": 1,
-    "restValue": 30,
-    "sets": 1,
-    "sortNo": 0,
-    "sportType": 4,
-    "status": 1,
-    "createTimestamp": 1707082401,
-    "thumbnailUrl": "",
-    "sourceUrl": "",
-    "videoUrl": "",
-    "videoInfos": [],
-    "muscleText": "Hip Flexors",
-    "secondaryMuscleText": "",
-    "partText": "Legs/Hips",
-    "equipmentText": "Bodyweight",
-    "desc": ""
   },
   {
     "id": "426801647558246401",

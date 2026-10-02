@@ -79,7 +79,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 |------|-------------|
 | `authenticate_coros` | Log in with email/password (or auto-login from env vars) |
 | `check_coros_auth` | Verify current auth status |
-| `search_exercises` | Search ~388 exercises by name, muscle, body part, equipment |
+| `search_exercises` | Search ~382 exercises by name, muscle, body part, equipment |
 | `create_workout` | Build and push a strength workout to COROS |
 | `update_exercises` | Fetch the latest exercise catalog from COROS and rebuild locally |
 | `list_workouts` | List existing workouts |
@@ -96,7 +96,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 
 ## Updating the exercise catalog
 
-The bundled exercise catalog (`data/exercises.json`) is a static snapshot. If COROS adds new exercises, use the `update_exercises` tool to refresh it. This fetches the latest exercises from the COROS API and i18n strings from the CDN, rebuilds the catalog, and reloads the in-memory cache — all in a single tool call. Requires authentication.
+The bundled exercise catalog (`data/exercises.json`) is a static snapshot. If COROS adds new exercises, use the `update_exercises` tool to refresh it. This fetches the latest exercises from the COROS API and i18n strings from the CDN, rebuilds the catalog, and reloads the in-memory cache — all in a single tool call. Your own custom exercises are skipped, so the catalog only contains COROS built-ins. Requires authentication.
 
 ## Auth notes
 
