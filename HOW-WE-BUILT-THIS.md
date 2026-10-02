@@ -17,7 +17,7 @@ The project started with opening Chrome DevTools on the COROS Training Hub web a
 About a week later, we went back to Chrome DevTools and **created a test workout manually** in the COROS Training Hub, capturing every API call:
 
 - **[`create-workout-request-all.txt`](research/create-workout-request-all.txt)** (28 KB) — Three captured `curl` commands showing the complete workout creation flow:
-  1. `POST /training/program/calculate` — Sends the full workout payload (exercises with ~40 fields each) and gets back calculated metrics (duration, totalSets, trainingLoad)
+  1. `POST /training/program/calculate` — Sends the full workout payload (exercises with ~40 fields each) and gets back calculated metrics. Only the request was captured, and we assumed the response reused the request's names (`duration`, `totalSets`, `trainingLoad`); it actually answers with plan-prefixed names (`planDuration`, `planSets`, `planTrainingLoad`), which went unnoticed until [#6](https://github.com/rowlando/coros-workout-mcp/pull/6)
   2. `POST /training/program/add` — Sends the same payload enriched with calculated values to actually save the workout
   3. `POST /training/program/query` — Lists existing workouts
 
