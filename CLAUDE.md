@@ -40,6 +40,7 @@ User provides exercise names + overrides → `findByName()` validates against ca
 - API auth requires `accesstoken` header + `yfheader` JSON with `userId`. Logging in via API invalidates the COROS web app session.
 - Base URLs: `teameuapi.coros.com` (EU), `teamapi.coros.com` (US). Region defaults to `eu`.
 - `sportType: 4` = Strength Training for Training Hub workouts. Recorded activities use a different numbering (`402` = Strength); see `SPORT_TYPE_NAMES` in `activity-format.ts`.
+- `/training/program/calculate` returns plan-prefixed fields (`planDuration` in seconds, `planSets`, `planTrainingLoad`, plus `actual*` counterparts), not the request's `duration`/`totalSets`/`trainingLoad`. `parseCalculateResult()` maps them.
 - `/activity/query` filters dates with `startDay`/`endDay` (YYYYMMDD); it silently ignores `startDate`/`endDate`.
 - Activity detail units differ from the list endpoint: times are centiseconds, weights grams, calories kcal×1000. In `lapItemList`, `mode` 14 = working set, 15 = rest after a set, 16 = exercise total, 17 = rest total.
 
