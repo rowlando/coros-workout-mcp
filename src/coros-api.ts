@@ -464,6 +464,32 @@ export interface CalculateResult {
   trainingLoad: number;
 }
 
+/** First finite number among `keys`, else 0. Zero is a valid value, so it must not fall through. */
+function firstNumber(data: Record<string, unknown>, ...keys: string[]): number {
+  for (const key of keys) {
+    const value = data[key];
+    if (typeof value === "number" && Number.isFinite(value)) return value;
+  }
+  return 0;
+}
+
+/*
+  The calculate endpoint answers with plan-prefixed names, not the ones the
+  program itself uses. A live response carries planCount, planDistance,
+  planDuration (seconds), planElevGain, planHybridTotalSets, planPitch,
+  planSets and planTrainingLoad, plus their actual* counterparts.
+
+  The unprefixed names are kept as a fallback in case they come back.
+*/
+export function parseCalculateResult(data: unknown): CalculateResult {
+  const source = (data ?? {}) as Record<string, unknown>;
+  return {
+    duration: firstNumber(source, "planDuration", "duration"),
+    totalSets: firstNumber(source, "planSets", "totalSets"),
+    trainingLoad: firstNumber(source, "planTrainingLoad", "trainingLoad"),
+  };
+}
+
 export async function calculateWorkout(
   auth: AuthData,
   name: string,
@@ -471,14 +497,8 @@ export async function calculateWorkout(
   exercisePayloads: ExercisePayload[]
 ): Promise<CalculateResult> {
   const payload = buildWorkoutPayload(name, overview, exercisePayloads);
-  const result = (await apiPost(auth, "/training/program/calculate", payload)) as {
-    data: { duration: number; totalSets: number; trainingLoad: number };
-  };
-  return {
-    duration: result.data.duration,
-    totalSets: result.data.totalSets,
-    trainingLoad: result.data.trainingLoad,
-  };
+  const result = (await apiPost(auth, "/training/program/calculate", payload)) as { data?: unknown };
+  return parseCalculateResult(result?.data);
 }
 
 export async function addWorkout(
