@@ -10,6 +10,9 @@ import {
   resolveExercises,
   calculateWorkout,
   addWorkout,
+  buildSavedWorkoutPayload,
+  scheduleWorkout,
+  isValidDay,
   queryWorkouts,
   queryActivities,
   queryActivityDetail,
@@ -175,13 +178,17 @@ const ExerciseInputSchema = z.object({
 
 server.tool(
   "create_workout",
-  "Create a strength workout on COROS Training Hub. Resolves exercise names from the catalog, builds the full API payload, calculates metrics, and saves the workout. The workout will sync to the user's COROS watch.",
+  "Create a strength workout on COROS Training Hub. Resolves exercise names from the catalog, builds the full API payload, calculates metrics, and saves the workout to the workout library. Pass `date` to also put it on the training calendar for that day. The workout will sync to the user's COROS watch.",
   {
     name: z.string().describe("Workout name (e.g. 'Upper Body Push')"),
     overview: z.string().default("").describe("Workout description"),
     exercises: z.array(ExerciseInputSchema).min(1).describe("Array of exercises with optional overrides"),
+    date: z
+      .string()
+      .optional()
+      .describe("Optional calendar day as YYYYMMDD (e.g. '20261120'). When given, the workout is also scheduled on the training calendar for that day."),
   },
-  async ({ name, overview, exercises }) => {
+  async ({ name, overview, exercises, date }) => {
     try {
       const auth = await getValidAuth();
       if (!auth) {
@@ -190,6 +197,18 @@ server.tool(
             {
               type: "text" as const,
               text: "Not authenticated. Use authenticate_coros first.",
+            },
+          ],
+          isError: true,
+        };
+      }
+
+      if (date !== undefined && !isValidDay(date)) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: `Invalid date "${date}". Use a real calendar day as YYYYMMDD, e.g. 20261120.`,
             },
           ],
           isError: true,
@@ -229,6 +248,24 @@ server.tool(
       // Create the workout
       await addWorkout(auth, name, overview, exercisePayloads, calculated);
 
+      // The library save has already happened, so a calendar failure is reported, not thrown.
+      let calendarLine = "";
+      if (date !== undefined) {
+        const day = `${date.slice(0, 4)}-${date.slice(4, 6)}-${date.slice(6, 8)}`;
+        try {
+          const { othersOnDay } = await scheduleWorkout(
+            auth,
+            buildSavedWorkoutPayload(name, overview, exercisePayloads, calculated),
+            date
+          );
+          calendarLine =
+            `Scheduled on the training calendar for ${day}.` +
+            (othersOnDay > 0 ? ` ${othersOnDay} other workout(s) are already on that day.` : "");
+        } catch (error) {
+          calendarLine = `Saved to the library, but scheduling it for ${day} failed: ${error instanceof Error ? error.message : String(error)}`;
+        }
+      }
+
       const totalSets = exercises.reduce(
         (sum, ex) => sum + (ex.sets ?? findByName(ex.name)!.sets),
         0
@@ -257,6 +294,7 @@ server.tool(
               `Exercises:`,
               exerciseSummary,
               ``,
+              ...(calendarLine ? [calendarLine] : []),
               `The workout will sync to your COROS watch.`,
             ].join("\n"),
           },

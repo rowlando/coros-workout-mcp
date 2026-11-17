@@ -1,5 +1,11 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { queryActivityDetail, queryWorkouts } from "../coros-api.js";
+import {
+  buildWorkoutPayload,
+  isValidDay,
+  queryActivityDetail,
+  queryWorkouts,
+  scheduleWorkout,
+} from "../coros-api.js";
 import type { AuthData } from "../types.js";
 
 const auth: AuthData = {
@@ -100,5 +106,66 @@ describe("JSON POST requests", () => {
     expect(JSON.parse(String(init?.body))).toMatchObject({ startNo: 0, limitSize: 10 });
     const headers = init?.headers as Record<string, string>;
     expect(headers["Content-Type"]).toBe("application/json");
+  });
+});
+
+describe("isValidDay", () => {
+  it("accepts real YYYYMMDD days only", () => {
+    expect(isValidDay("20261120")).toBe(true);
+    expect(isValidDay("20240229")).toBe(true);
+    expect(isValidDay("20260230")).toBe(false);
+    expect(isValidDay("2026-11-20")).toBe(false);
+    expect(isValidDay("202611")).toBe(false);
+  });
+});
+
+describe("scheduleWorkout", () => {
+  it("picks the next idInPlan and posts the program inline after what is already on the day", async () => {
+    fetchMock
+      .mockResolvedValueOnce(
+        jsonResponse({
+          result: "0000",
+          data: { maxIdInPlan: "41", entities: [{ happenDay: 20261120, idInPlan: 41 }] },
+        })
+      )
+      .mockResolvedValueOnce(jsonResponse({ result: "0000", data: {} }));
+
+    const program = buildWorkoutPayload("Push day", "", []);
+    const result = await scheduleWorkout(auth, program, "20261120");
+
+    expect(result).toEqual({ idInPlan: 42, othersOnDay: 1 });
+
+    const [queryUrl, queryInit] = fetchMock.mock.calls[0];
+    const parsed = new URL(String(queryUrl));
+    expect(parsed.pathname).toBe("/training/schedule/query");
+    expect(Object.fromEntries(parsed.searchParams)).toEqual({
+      startDate: "20261120",
+      endDate: "20261120",
+      supportRestExercise: "1",
+    });
+    expect(queryInit?.method).toBe("GET");
+
+    const [updateUrl, updateInit] = fetchMock.mock.calls[1];
+    expect(new URL(String(updateUrl)).pathname).toBe("/training/schedule/update");
+    const body = JSON.parse(String(updateInit?.body));
+    expect(body.entities).toEqual([
+      { happenDay: "20261120", idInPlan: 42, sortNoInSchedule: 2 },
+    ]);
+    expect(body.versionObjects).toEqual([{ id: 42, status: 1 }]);
+    expect(body.pbVersion).toBe(2);
+    expect(body.programs).toHaveLength(1);
+    expect(body.programs[0].idInPlan).toBe(42);
+    expect(body.programs[0].name).toBe("Push day");
+    expect(body.programs[0].sportType).toBe(4);
+  });
+
+  it("starts at idInPlan 1 on an empty calendar", async () => {
+    fetchMock
+      .mockResolvedValueOnce(jsonResponse({ result: "0000", data: {} }))
+      .mockResolvedValueOnce(jsonResponse({ result: "0000", data: {} }));
+
+    const result = await scheduleWorkout(auth, buildWorkoutPayload("A", "", []), "20261120");
+
+    expect(result).toEqual({ idInPlan: 1, othersOnDay: 0 });
   });
 });

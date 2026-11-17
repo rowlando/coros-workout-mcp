@@ -80,7 +80,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 | `authenticate_coros` | Log in with email/password (or auto-login from env vars) |
 | `check_coros_auth` | Verify current auth status |
 | `search_exercises` | Search ~382 exercises by name, muscle, body part, equipment |
-| `create_workout` | Build and push a strength workout to COROS |
+| `create_workout` | Build and push a strength workout to COROS; pass `date` (YYYYMMDD) to also put it on the training calendar |
 | `update_exercises` | Fetch the latest exercise catalog from COROS and rebuild locally |
 | `list_workouts` | List existing workouts |
 | `list_activities` | List activities recorded by your watch, optionally filtered by date |
@@ -91,6 +91,8 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 > "Search for chest exercises with bodyweight"
 >
 > "Create a workout called 'Quick Push' with 4x15 Push-ups, 3x10 Diamond Push-ups, and 3x20 Decline Push-ups with 45s rest"
+>
+> "Create that workout again and put it on my calendar for Friday"
 >
 > "How did my strength session on 16 March go, set by set?"
 

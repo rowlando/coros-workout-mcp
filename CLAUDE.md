@@ -30,7 +30,7 @@ To run a single test file: `npx vitest run src/__tests__/exercise-catalog.test.t
 - `types.ts` — All interfaces and enum maps. Numeric code → human-readable name mappings for muscles, body parts, equipment. Key types: `CatalogExercise` (bundled catalog), `ExercisePayload` (API payload), `ExerciseOverrides` (user input), `RawExercise` (API response).
 
 **Data flow for workout creation:**
-User provides exercise names + overrides → `findByName()` validates against catalog → `buildExercisePayload()` merges catalog defaults with overrides → `buildWorkoutPayload()` wraps exercises → POST to `/calculate` for metrics → POST to `/add` to save.
+User provides exercise names + overrides → `findByName()` validates against catalog → `buildExercisePayload()` merges catalog defaults with overrides → `buildWorkoutPayload()` wraps exercises → POST to `/calculate` for metrics → POST to `/add` to save. With a `date`, `scheduleWorkout()` then puts the same program on the training calendar.
 
 ## Key Conventions
 
@@ -42,6 +42,7 @@ User provides exercise names + overrides → `findByName()` validates against ca
 - `sportType: 4` = Strength Training for Training Hub workouts. Recorded activities use a different numbering (`402` = Strength); see `SPORT_TYPE_NAMES` in `activity-format.ts`.
 - `/training/program/calculate` returns plan-prefixed fields (`planDuration` in seconds, `planSets`, `planTrainingLoad`, plus `actual*` counterparts), not the request's `duration`/`totalSets`/`trainingLoad`. `parseCalculateResult()` maps them.
 - `/activity/query` filters dates with `startDay`/`endDay` (YYYYMMDD); it silently ignores `startDate`/`endDate`.
+- The training calendar has no "schedule this library workout" call. `scheduleWorkout()` GETs `/training/schedule/query` (`startDate`/`endDate` as YYYYMMDD) for `maxIdInPlan`, then POSTs the whole program inline to `/training/schedule/update` with `idInPlan = maxIdInPlan + 1` and `versionObjects: [{ id, status: 1 }]` (1 = add). Payload shape taken from cygnusb/coros-mcp, not from our own capture.
 - Activity detail units differ from the list endpoint: times are centiseconds, weights grams, calories kcal×1000. In `lapItemList`, `mode` 14 = working set, 15 = rest after a set, 16 = exercise total, 17 = rest total.
 
 ## Exercise Catalog
