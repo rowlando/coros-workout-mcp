@@ -501,6 +501,22 @@ export async function calculateWorkout(
   return parseCalculateResult(result?.data);
 }
 
+/** The program as it is saved: the built payload with the calculated metrics written back. */
+export function buildSavedWorkoutPayload(
+  name: string,
+  overview: string,
+  exercisePayloads: ExercisePayload[],
+  calculated: CalculateResult
+): WorkoutPayload {
+  const payload = buildWorkoutPayload(name, overview, exercisePayloads);
+  payload.duration = calculated.duration;
+  payload.totalSets = calculated.totalSets;
+  payload.distance = "0"; // String in add (number in calculate)
+  payload.sets = calculated.totalSets;
+  payload.pitch = 0;
+  return payload;
+}
+
 export async function addWorkout(
   auth: AuthData,
   name: string,
@@ -508,14 +524,85 @@ export async function addWorkout(
   exercisePayloads: ExercisePayload[],
   calculated: CalculateResult
 ): Promise<unknown> {
-  const payload = buildWorkoutPayload(name, overview, exercisePayloads);
-  // Apply calculated values
-  payload.duration = calculated.duration;
-  payload.totalSets = calculated.totalSets;
-  payload.distance = "0"; // String in add (number in calculate)
-  payload.sets = calculated.totalSets;
-  payload.pitch = 0;
-  return apiPost(auth, "/training/program/add", payload);
+  return apiPost(
+    auth,
+    "/training/program/add",
+    buildSavedWorkoutPayload(name, overview, exercisePayloads, calculated)
+  );
+}
+
+// --- Training calendar ---
+
+/** True for a real calendar date written as YYYYMMDD. */
+export function isValidDay(day: string): boolean {
+  if (!/^\d{8}$/.test(day)) return false;
+  const year = Number(day.slice(0, 4));
+  const month = Number(day.slice(4, 6));
+  const date = Number(day.slice(6, 8));
+  const parsed = new Date(Date.UTC(year, month - 1, date));
+  return (
+    parsed.getUTCFullYear() === year &&
+    parsed.getUTCMonth() === month - 1 &&
+    parsed.getUTCDate() === date
+  );
+}
+
+export interface ScheduleData {
+  /** Highest idInPlan used so far in the account's calendar. */
+  maxIdInPlan?: number | string;
+  entities?: Array<{ happenDay?: number | string; idInPlan?: number | string }>;
+}
+
+export async function querySchedule(
+  auth: AuthData,
+  startDay: string,
+  endDay: string
+): Promise<ScheduleData> {
+  const result = await apiGet(auth, "/training/schedule/query", {
+    startDate: startDay,
+    endDate: endDay,
+    supportRestExercise: 1,
+  });
+  return (result.data ?? {}) as ScheduleData;
+}
+
+/*
+  The calendar has no "schedule this library workout" call. The web app posts
+  the whole program inline, keyed by an idInPlan the client picks (one more
+  than the calendar's current maximum). versionObjects status 1 = add.
+*/
+export function buildSchedulePayload(
+  program: WorkoutPayload,
+  day: string,
+  idInPlan: number,
+  sortNo: number
+) {
+  return {
+    entities: [{ happenDay: day, idInPlan, sortNoInSchedule: sortNo }],
+    programs: [{ ...program, idInPlan }],
+    versionObjects: [{ id: idInPlan, status: 1 }],
+    pbVersion: 2,
+  };
+}
+
+/** Put a workout on the training calendar on `day` (YYYYMMDD), after anything already there. */
+export async function scheduleWorkout(
+  auth: AuthData,
+  program: WorkoutPayload,
+  day: string
+): Promise<{ idInPlan: number; othersOnDay: number }> {
+  const schedule = await querySchedule(auth, day, day);
+  const max = Number(schedule.maxIdInPlan ?? 0);
+  const idInPlan = (Number.isFinite(max) ? max : 0) + 1;
+  const othersOnDay = (schedule.entities ?? []).filter(
+    (entity) => String(entity.happenDay) === day
+  ).length;
+  await apiPost(
+    auth,
+    "/training/schedule/update",
+    buildSchedulePayload(program, day, idInPlan, othersOnDay + 1)
+  );
+  return { idInPlan, othersOnDay };
 }
 
 export interface QueryOptions {
